@@ -1,0 +1,89 @@
+# -*- conf -*-
+
+PRINTER="TO_FILE:/tmp/output.ps"
+#PRINTER="lp"
+
+PRINT_COMMAND="lpr"
+
+# Here you can set the path to the penguin image
+PENGUIN="off"
+
+# Turn printing of X-Face picture on/off
+XFACE="off"
+
+# Here you can turn the duplex print on or off.
+DUPLEX="off"
+
+# Here you can turn on or off the paper save mode
+# (printing 2 pages on 1 page)
+# Set it to 'optional' if you only want papersave mode
+# if more than one page is printed.
+PAPERSAVE="off"
+
+# Choose a font:
+# - Latex (EC-Fonts)
+# - Latex-bright (CM-bright)
+# - Times
+# - Utopia
+# - Palatino
+# - Charter
+# - Bookman
+FONT="Latex"
+
+# Choose a style for the first page
+# - plain       no rules
+# - border      rule after the headers
+# - fbox        simple box around the mailheaders
+# - shadowbox   shadowbox around the header
+# - ovalbox     box with rounded corners around the header (thin lines)
+# - Ovalbox     same as "ovalbox" but thicker lines
+# - doublebox   box with double lines around the header
+# - grey        grey background behind the headers
+# - greybox     same as "grey" but with a additional black box
+FRONTSTYLE="shadowbox"
+
+# Should there be a rule after the header (not first page)
+HEADRULE="on"
+
+# Should there be a rule over the footer
+FOOTRULE="on"
+
+# Choose a paper format:
+# - A4
+# - letter
+PAPER="letter"
+
+# prints no signatures which were seperated by "-- "
+REM_SIG="off"
+
+# prints no quoting
+REM_QUOTE="off"
+
+# Choose of the printed headers, separation with "_"
+# /Header/ : italic printing
+# *Header* : bold printing
+# If the header does not exist, it is not printed.
+PRINTED_HEADERS="Date_To_From_CC_Newsgroups_*Subject*"
+
+# Writes error messages of LaTeX and dvips to /tmp/muttprint.log
+DEBUG="0"
+
+# Font size: 10pt, 11pt or 12pt
+FONTSIZE="10pt"
+
+# Longest line
+WRAPMARGIN="80"
+
+# Charset
+# latin1, latin2, latin3, latin4, latin5, latin9, auto
+CHARSET="latin1"
+
+# Date (format of printed date)
+# original, local
+DATE="original"
+
+# Date format string (only if DATE=local)
+# See strftime(3) for details
+DATE_FORMAT="%c"
+
+MAINT_SEARCH="off"
