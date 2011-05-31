@@ -1,0 +1,16 @@
+# -*- conf -*-
+#
+defaults
+tls on
+tls_starttls off
+tls_certcheck off
+delivery mda procmail
+
+# Primary accounts
+
+account foo
+host pop3.example.com
+user aeiou
+password 123456
+
+account default : foo
