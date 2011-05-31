@@ -1,0 +1,37 @@
+[default]
+vo=xv
+ao=alsa
+joystick=no
+lirc=no
+
+#vop="pp=0x20077"
+#vf="pp=lb:a"
+#vf="hqdn3d,pp=ha/va/dr"
+#vf="pp=ha:a/va:a/dr:a/tn:a"
+#vf="pp=ha:a/va:a/dr:a/lb:a"
+#vf="pp=lb:a"
+#vf="yadif=1"
+
+#af="volnorm=2:0.75"
+
+ffactor=1 # thickness of the border of subtitles
+subfont-outline=4 # thickness of the border of subtitles
+fontconfig=yes # use fontconfig engine
+font="Sans" # which font to use for subtitles
+subfont-text-scale=3 # size of the subtitles
+sub-bg-alpha=0 # alpha channel value for subtitles
+subpos=95
+spuaa=4 # anti-aliasing of dvd subtitles
+#subcp=utf-8
+subcp=iso-8859-1
+#osdlevel=2
+
+# for cropping
+# KP6 change_rectangle 0 +2
+# KP4 change_rectangle 0 -2
+# KP2 change_rectangle 1 +2
+# KP8 change_rectangle 1 -2
+# RIGHT change_rectangle 2 +2
+# LEFT change_rectangle 2 -2
+# DOWN change_rectangle 3 +2
+# UP change_rectangle 3 -2
