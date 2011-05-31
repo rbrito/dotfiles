@@ -1,0 +1,19 @@
+[user]
+	name = Rogério Brito
+	email = rbrito@ime.usp.br
+[color]
+	ui = true
+        branch = auto
+        diff = auto
+        interactive = auto
+        status = auto
+[core]
+	editor = emacs
+	compression = 9
+[alias]
+        lol = log --graph --decorate --pretty=oneline --abbrev-commit
+        lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	lap = log --reverse --no-merges -p
+[gc]
+        aggressiveWindow = 500
+        pruneExpire = "1 week ago"

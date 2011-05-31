@@ -1,0 +1,3 @@
+set mainfont {{DejaVu Sans} 10}
+set textfont {{DejaVu Sans Mono} 10}
+set uifont {{DejaVu Sans} 9 bold}
