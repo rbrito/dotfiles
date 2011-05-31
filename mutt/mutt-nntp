@@ -1,0 +1,26 @@
+# -*- muttrc -*-
+#
+# NNTP (with patch from "Andrej N. Gritsenko" <andrej@lucky.net>)
+#
+set catchup_newsgroup=ask-yes	# catchup articles when leaving newsgroup
+#set group_index_format="%4C %M%N %5s  %-35.35f %d"
+#				# newsgroup browser format
+unset inews			# inews command with headers (use default!)
+set mime_subject		# Use MIME-Quoted-Printable in news headers
+set news_cache_dir="~/.mutt"	# Cache files
+set news_server="nntp.aoie.org"	# News server (defaults to $NNTPSERVER)
+set newsrc="~/.newsrc"		# newsrc file
+#set nntp_attempts=10		# number of attempts to connect to NNTP server
+set nntp_context=1500		# number of articles in entered newsgroup
+set nntp_load_description	# load newsgroup descriptions
+#set nntp_user=""		# NNTP username
+#set nntp_pass=""		# NNTP password
+set nntp_poll=60		# time (in seconds) to check for new news
+set post_moderated=ask-yes	# Post articles to moderated newsgroups?
+#set reconnect_news=ask-yes	# reconnect when nntp connection was lost?
+set followup_to_poster=ask-yes
+set nntp_reconnect=ask-yes
+#unset save_unsubscribed 	# save info about unsubscr. groups in newsrc?
+#set show_new_news		# ask for new newsgroups when entering server?
+#unset x_comment_to		# add X-Comment-To: Realname?
+##server-hook [!]regexp command

@@ -1,0 +1,11 @@
+# -*- muttrc -*-
+set folder="imaps://imap.googlemail.com/"	# where *mailboxes* are stored
+set spoolfile="=INBOX"				# where *new* mail is stored
+set mbox="=[Gmail]/All Mail"			# where *read* mail is stored
+set postponed="=[Gmail]/Drafts"			# where *postponed* mail is stored
+set record="=[Gmail]/Sent Mail"			# where *sent* mail is stored
+#set trash="=[Gmail]/Trash"			# where *trash* mail is stored
+save-hook .* "=[Gmail]/Spam"			# where *junk* mail is stored
+
+# Bind g to grab new messages
+bind index,pager	g	imap-fetch-mail

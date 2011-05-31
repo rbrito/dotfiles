@@ -1,0 +1,193 @@
+#
+# Rogério Brito's mutt configuration file.
+#
+
+#---------------------------------------------------------------------
+# Personal settings
+#---------------------------------------------------------------------
+my_hdr From: Rogério Brito <rbrito@ime.usp.br>
+
+#---------------------------------------------------------------------
+# Account Management
+#--------------------------------------------------------------------
+#source ~/.mutt/mutt-nntp
+#source ~/.mutt/mutt-sidebar
+
+#---------------------------------------------------------------------
+# Generic settings
+#---------------------------------------------------------------------
+
+# Header manipulation
+ignore *
+unignore from: to reply-to subject date cc message x-mailer user-agent newsgroups
+hdr_order From From: To: Newsgroups: Reply-To: Subject: Date: Cc: X-Mailer: User-Agent:
+
+# Generic controls
+set hostname="ime.usp.br"	# which domain should be used
+set use_domain=no		# qualify unqualified names
+set use_8bitmime=yes		# use the full set of characters?
+set edit_headers=yes		# edit headers in editor
+set ignore_list_reply_to=yes	# use the Mail-Followup-To field for lists
+set editor="emacs %s -f post-mode"# how to call the text editor
+set envelope_from=no		# stupid ISPs
+set sendmail="/usr/bin/msmtp"	# how to call sendmail
+set sort=threads		# show messages sorted by threads
+set quote_regexp="^[ \t]*[a-zA-Z\.]*>"	# Default: "^([ \t]*[>|#:}])+"
+set pager_index_lines=10	# number of messages to list while in pager
+set mime_forward=ask-no		# forward msgs as attachments?
+set wait_key=no			# for external programs
+set beep=yes			# beep on errors
+set pager_stop=yes		# don't go to next msg when hitting end of msg
+set delete=ask-yes		# delete messages when closing folders
+set fast_reply=no		# ask questions before editing message
+set include=ask-yes		# include message when replying
+set mark_old=yes		# mark unread messages as old
+set sig_dashes=yes		# prefix signature with dashes?
+set tmpdir="~/tmp/"		# where to save tmp files
+set strict_threads=no		# join threads based only on references?
+#set text_flowed=yes		# generate text-flowed messages?
+set header_cache="~/tmp/"	# directory where we cache headers of mails
+
+# #Use utf-8 as much as possible (for the future?)
+#charset-hook us-ascii utf-8	# use utf-8 for incorrectly encoded emails
+#set charset="utf-8"		# which charset the terminal uses
+set send_charset="utf-8"	# send emails with utf-8 chars
+
+# Support for MIME types
+alternative_order text/plain text/html text
+auto_view text/enriched text/html
+
+# Recognize messages composed with Enigmail as being criptographed
+# message-hook '!(~g|~G) ~b"^-----BEGIN\ PGP\ (SIGNED\ )?MESSAGE"' "exec check-traditional-pgp"
+
+# Support for printing
+set print_command="muttprint"	# program to call when printing msgs
+set print=ask-yes		# asks for confirmation before printing
+set print_split=yes		# splits multiple messages before printing
+
+# Settings related to formats of dates, attributions etc.
+set date_format="%b %d %Y"		# how the dates are shown
+set attribution="On %d, %n wrote:"	# how attribution is show
+set forward_format="%s (fwd)"		# subject of forwards
+set index_format="%4C %Z %{%b %d} %-15.15F (%4l) %s"
+set signature="~/.signature/default"	# which signature to use
+
+#---------------------------------------------------------------------
+# Dealing with aliases
+#---------------------------------------------------------------------
+set alias_file="~/.mutt/aliases"# where to save aliases
+set reverse_alias=yes		# shows names instead of e-mails
+source ~/.mutt/aliases		# use the aliases (not automatically used)
+set query_command="lbdbq %s"	# command to query addressbooks/contacts
+
+#---------------------------------------------------------------------
+# Security-related options (for use with {POP3,IMAP}S)
+#---------------------------------------------------------------------
+set certificate_file="~/.mutt/certificates"	# server certificates
+set ssl_starttls=yes		# use encryption for connections
+set ssl_use_sslv3=yes		# use SSL v3
+set ssl_use_tlsv1=yes		# use TSL v1
+#set imap_force_ssl=yes		# always use encryption
+set imap_check_subscribed=yes	# ask IMAP server for mailboxes
+set imap_idle=yes		# auto-check for new IMAP mail
+
+#---------------------------------------------------------------------
+# Where mail is found, where should it be saved etc.
+#---------------------------------------------------------------------
+source ~/.mutt/private-data
+source ~/.mutt/account/gmail
+source ~/.mutt/account/local
+source ~/.mutt/account/localhost
+
+#---------------------------------------------------------------------
+# For mailing lists (to generate correct Mail-Followup-To fields)
+#---------------------------------------------------------------------
+subscribe debian-powerpc
+subscribe lame-dev
+
+#---------------------------------------------------------------------
+# Hooks for some folders
+#---------------------------------------------------------------------
+folder-hook . my_hdr "From: Rogério Brito <rbrito@ime.usp.br>"
+folder-hook . set signature="~/.signature/default"
+
+#---------------------------------------------------------------------
+# Support for third-party programs
+#---------------------------------------------------------------------
+macro index,pager <f2>	"|corretor\n" "Sends netiquette message"
+
+# Taken from: https://groups.google.com/group/comp.mail.mutt/browse_thread/thread/71483efc844a0ad6
+# toggle index display in pager
+macro pager ,@inds "\
+<enter-command>set pager_index_lines=10; \
+macro pager D ,@indh 'hide index'<enter>"
+#
+macro pager ,@indh "\
+<enter-command> set pager_index_lines=0; \
+macro pager D ,@inds 'show index'<enter>"
+#
+macro pager D ,@indh "hide index"
+
+#---------------------------------------------------------------------
+# User interface
+#---------------------------------------------------------------------
+# Key bindings
+bind editor     <delete>  delete-char
+
+bind pager	l	change-folder
+bind pager	p	previous-entry
+bind pager	n	next-entry
+bind pager	N	search-next
+bind pager	G	group-reply
+bind pager	c	mail
+bind pager	\n	noop
+bind pager	y	print-message
+bind pager	<up>	previous-line
+bind pager	<down>	next-line
+bind pager	' '	next-page
+bind pager	-	previous-page
+#bind pager	F	followup-message
+bind pager	<f7>	decrypt-copy
+bind pager	<f8>	decrypt-save
+
+
+bind index	l	change-folder
+bind index	p	previous-entry
+bind index	n	next-entry
+bind index	N	search-next
+bind index	c	mail
+bind index	y	print-message
+bind index	<up>	previous-entry
+bind index	<down>	next-entry
+bind index	' '	next-page
+bind index	-	previous-page
+#bind index	F	followup-message
+bind index	<f7>	decrypt-copy
+bind index	<f8>	decrypt-save
+
+# Video attribute definitions
+color	hdrdefault	green		black
+color	header		brightyellow	black	"^from:"
+color	header		brightyellow	black	"^subject:"
+color	quoted		green		black
+color	signature	brightred	black
+color	indicator	brightyellow	red
+color	error		brightred	black
+color	status		brightwhite	blue
+color	message		white		black
+color	tree		brightmagenta	black
+color	tilde		brightmagenta	black
+color	normal		white		black
+color	body		brightyellow	black	((((ht|f)tps?)|mailto):(//)?[^\ >"\t]*|www\.[-a-z0-9.]+)[^\ .,;\t>">]
+color	body		brightmagenta	black	"[-a-z_0-9.]+@[-a-z_0-9.]+"
+color	body		brightyellow	black	"^Good signature"
+color	body		brightwhite	red	"^Bad signature from.*"
+
+# Monochromatic definitions
+mono	header		bold			"^subject:"
+mono	header		bold			"^from:"
+mono	error		bold
+mono	body		bold			((((ht|f)tps?)|mailto):(//)?[^\ >"\t]*|www\.[-a-z0-9.]+)[^\ .,;\t>">]
+mono	body		bold			"[-a-z_0-9.]+@[-a-z_0-9.]+"
+mono	body		bold			"^Good signature"
+mono	body		bold			"^Bad signature from.*"

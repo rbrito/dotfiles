@@ -1,0 +1,11 @@
+# -*- muttrc -*-
+set folder="imap://localhost/"			# where *mailboxes* are stored
+set spoolfile="=INBOX"				# where *new* mail is stored
+set mbox="=All Mail"				# where *read* mail is stored
+set postponed="=Drafts"				# where *postponed* mail is stored
+set record="=Sent Mail"				# where *sent* mail is stored
+#set trash="=Trash"				# where *trash* mail is stored
+save-hook .* "=Spam"				# where *junk* mail is stored
+
+# Bind g to grab new messages
+bind index,pager	g	imap-fetch-mail

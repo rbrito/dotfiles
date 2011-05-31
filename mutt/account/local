@@ -1,0 +1,12 @@
+# -*- muttrc -*-
+set spoolfile="~/Maildir/"		# where *new* (incoming) mail is stored
+set mbox="~/Maildir/"			# where *read* mail is stored
+set folder="~/Maildir/"			# where *mailboxes* are stored
+set postponed="=.Drafts"		# where *postponed* mail is stored
+set record="=.Sent Mail"		# where *sent* mail is stored
+save-hook .* "=.Spam"			# where *junk* mail is stored
+
+account-hook .				'unset imap_user; unset imap_pass'
+
+# Bind g to grab new messages
+macro index,pager g	"!mpop -a\n"	"Get new mail"
