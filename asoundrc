@@ -1,0 +1,22 @@
+pcm.51to41
+{
+	type route
+	slave.pcm surround51
+	slave.channels 6
+
+	# Front and rear, at 50% of original signal strength
+	ttable.0.0 0.5
+	ttable.1.1 0.5
+	ttable.2.2 0.5
+	ttable.3.3 0.5
+
+	# Center channel routing (routed to front-left and front-right),
+	# 6dB gaindrop (gain half of main channels) per channel
+	ttable.4.0 0.25
+	ttable.4.1 0.25
+
+	# LFE channel routing (routed to front-left and front-right),
+	# 6dB gaindrop (gain half of main channels) per channel
+	ttable.5.0 0.25
+	ttable.5.1 0.25
+}
