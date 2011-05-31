@@ -1,0 +1,8 @@
+Compression=yes
+CompressionLevel=9
+ForwardX11=yes
+ControlPath=.%l-%h-%p-%r
+Ciphers=arcfour256,arcfour128,arcfour,blowfish-cbc,cast128-cbc,aes128-ctr,aes192-ctr,aes192-cbc,aes256-cbc,aes256-ctr,3des-cbc
+
+Host=alioth.debian.org git.debian.org svn.debian.org
+	User=rbrito-guest
