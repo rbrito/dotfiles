@@ -1,0 +1,121 @@
+[header_maps]
+
+[rename]
+windows = true
+diacriticals = false
+spaces = false
+ascii = false
+
+[settings]
+ratings = 4
+repeat = false
+jump = true
+headers = ~#track title ~album~discsubtitle artist genre ~#length ~#bitrate ~#disc ~#discs date replaygain_album_gain compilation
+disable_hints = false
+default_rating = 0.5
+eager_search = true
+round = true
+
+[plugins]
+gajim_status_statuses = online chat
+gajim_status_paused = True
+brainz_split_feat = true
+brainz_split_disc = true
+cover_engine_darktown = true
+scrobbler_service = Last.fm
+animosd_delay = 2500
+randomalbum_use_weights = 0
+wikipedia = en
+gajim_status_accounts = 
+brainz_standard = true
+animosd_string = <album|\<b\><album>\</b\><discnumber| - Disc <discnumber>><part| - \<b\><part>\</b\>><tracknumber| - <tracknumber>>
+	>\<span weight='bold' size='large'\><title>\</span\> - <~length><version|
+	\<small\>\<i\><version>\</i\>\</small\>><~people|
+	by <~people>>
+browsefolders = thunar
+icon_tooltip = <album|<album~discnumber~part~tracknumber~title~version>|<artist~title~version>>
+animosd_pos_y = 0.0
+cover_edit = false
+icon_window_visible = false
+cover_edit_cmd = gimp
+alarm_times = HH:MM HH:MM HH:MM HH:MM HH:MM HH:MM HH:MM
+brainz_labelid = true
+cover_fit = false
+cover_engine_discogs = true
+animosd_font = Sans 22
+brainz_albumartist = true
+active_songsmenuplugins = ExportMeta
+	MusicBrainz lookup
+	Download Album art
+	Search artist in Wikipedia
+	Split Album
+	APEv2 to ID3v2
+	Export to HTML
+	ImportMeta
+	Reset Library Data
+	parsetags
+	ReplayGain
+brainz_year_only = true
+gajim_status_pattern = <artist> - <title>
+cover_engine_coverparadise = true
+active_eventplugins = QLScrobbler
+	Tray Icon
+	Alarm Clock
+scrobbler_username = rbrito
+cover_engine_amazon = true
+k3b = Brasero
+cover_fn = cover.jpg
+active_editingplugins = Convert Encodings
+	Title Case
+	Regex Substitution
+
+[library]
+exclude = 
+refresh_on_start = false
+
+[player]
+fallback_gain = 0.0
+gst_pipeline = 
+replaygain = true
+pre_amp_gain = 0.0
+time_remaining = false
+backend = gstbe
+
+[tagsfrompath]
+add = False
+underscores = true
+split = false
+titlecase = true
+
+[browsers]
+panes = ~format	genre	artist	album
+playlist = 
+rating_click = true
+color = true
+rating_confirm_multiple = false
+album_covers = true
+background = 
+filesystem = 
+album_substrings = 1
+query_text = 
+album_sort = 2
+
+[memory]
+shufflequeue = false
+queue = True
+browser = PanedBrowser
+exfalso_maximized = 0
+volume = 1.0
+sortby = 0genre
+maximized = 0
+seek = 0
+order = inorder
+songlist = True
+
+[editing]
+split_on = & , /
+save_to_songs = true
+save_email = quodlibet@lists.sacredchao.net
+id3encoding = 
+alltags = true
+human_title_case = true
