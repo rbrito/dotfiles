@@ -1,0 +1,45 @@
+OnLeftGrip Move1 :StartResizing bottomleft
+OnRightGrip Move1 :StartResizing bottomright
+
+OnTitlebar Double Mouse1 :Shade
+OnTitlebar Mouse1 :MacroCmd {Focus} {Raise} {ActivateTab}
+
+!OnTitlebar Mouse1 :StartMoving
+
+OnTitlebar Mouse2 :StartTabbing
+OnTitlebar Mouse3 :WindowMenu
+
+OnTitlebar Move1 :StartMoving
+
+OnWindow Mod1 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
+OnWindow Mod1 Mouse3 :MacroCmd {Raise} {Focus} {StartResizing BottomRight}
+OnWindowBorder Move1 :StartMoving
+
+OnDesktop Mouse1 :hideMenus
+OnDesktop Mouse2 :workspaceMenu
+OnDesktop Mouse3 :rootMenu
+
+Control Right :NextWorkspace
+Control Left :PrevWorkspace
+
+Shift Control Menu :RootMenu
+
+Mod1 1 :Workspace 1
+Mod1 2 :Workspace 2
+Mod1 3 :Workspace 3
+Mod1 4 :Workspace 4
+Mod1 5 :Workspace 5
+Mod1 6 :Workspace 6
+
+Control F1 :ExecCommand urxvtc &
+Control F2 :ExecCommand urxvtc -T Mutt -e mutt
+Control F3 :ExecCommand x-www-browser &
+Control F4 :ExecCommand emacs &
+Control F5 :ExecCommand icedove &
+Control F6 :ExecCommand x-terminal-emulator &
+
+Mod1 Tab :NextWindow
+Mod1 Shift Tab :PrevWindow
+
+Mod1 H :Minimize
+Mod1 Mod4 H :MaximizeWindow

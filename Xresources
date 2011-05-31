@@ -1,0 +1,138 @@
+! Rogério Britos .Xdefaults file
+
+!!! Rxvt
+Rxvt*font:			9x15
+Rxvt*geometry:			100x45
+Rxvt*loginShell:		true
+
+!!! URxvt
+URxvt.background:		#000000
+URxvt.boldFont:			9x15bold
+URxvt.cursorColor:		sandybrown
+URxvt.font:			9x15
+URxvt.foreground:		#dddddd
+URxvt.geometry:			100x45
+URxvt.pointerColor:		limegreen
+URxvt.scrollBar:		on
+
+!!! XTerm
+XTerm*Font:			9x15
+XTerm*JumpScroll:		true
+XTerm*VT100*colorMode:		on
+XTerm*VT100*colorULMode:	on
+XTerm*VT100*dynamicColors:	on
+XTerm*VT100*underLine:		off
+XTerm*VT100.geometry:		100x45
+XTerm*background:		#000000
+XTerm*boldFont:			10x20bold
+XTerm*cursorColor:		sandybrown
+XTerm*eightBitInput:		true
+XTerm*foreground:		#dddddd
+XTerm*loginShell:		true
+XTerm*menu*background:		tan
+XTerm*menu*foreground:		firebrick
+XTerm*menuFont:			vtbold
+XTerm*pointerColor:		limegreen
+XTerm*saveLines:		2000
+XTerm*scrollBar:		true
+XTerm*scrollbar*background:	aquamarine
+XTerm*scrollbar*foreground:	navy
+
+!!! Emacs
+Emacs*font:			Mono
+Emacs*BitMapIcon:		on
+Emacs*MenuBackground:		white
+Emacs*MenuInactivePattern:	cross_weave
+Emacs*MenuMode:			invert
+Emacs*MenuMouse:		orangered
+Emacs*PaneBorderWidth:		1
+!Emacs*PaneFont:			8x13
+Emacs*PaneForeground:		mediumvioletred
+Emacs*SelectionBorderWidth:	1
+!Emacs*SelectionFont:		8x13bold
+Emacs*SelectionForeground:	maroon
+Emacs*cursorColor:		red
+!Emacs*font:			-misc-fixed-bold-r-normal--15-120-100-100-c-90-iso8859-1
+Emacs*geometry:			100x45
+Emacs*menubar.background:	black
+Emacs*menubar.buttonForeground:	gold
+!Emacs*menubar.font:		8x13bold
+Emacs*menubar.foreground:	gold
+Emacs*menubar.verticalSpacing:	0
+Emacs*pointerColor:		mediumvioletred
+Emacs*popup.background:		steelblue
+Emacs*popup.buttonForeground:	green
+!Emacs*popup.font:		8x13bold
+Emacs*popup.foreground:		gold
+Emacs*toolBar:			0
+Emacs.background:		#002540
+Emacs.foreground:		azure3
+Emacs.pane.menubar.background:	darkGrey
+Emacs.pane.menubar.foreground:	black
+
+!!! XDvi
+!xdvi.editor:			gnuclient -q +%l %f
+xdvi*highlight:			red
+xdvi*keepPosition:		True
+xdvi.editor:			emacsclient --no-wait +%l %f
+xdvi.expert:			True
+!xdvi.mfMode:			ljfour:1200
+xdvi.paper:			a4
+xdvi.shrinkFactor:		3
+xdvi.wwwBrowser:		sensible-browser
+! loadurl
+! Taken (with small adaptations) from Debian Bugs #350292 & #350292
+xdvi.wheelTranslations:\
+       Shift<Btn4Down>:left(.08)\n\
+       Shift<Btn5Down>:right(.08)\n\
+	Ctrl<Btn4Down>:set-shrink-factor(+)\n\
+	Ctrl<Btn5Down>:set-shrink-factor(-)\n\
+	    <Btn4Down>:wheel(-.7)\n\
+	    <Btn5Down>:wheel(.7)\n
+
+
+!!! Xpdf
+Xpdf.initialZoom:		width
+
+!!! XConsole
+!XConsole*consoleLog:			/tmp/conslog
+XConsole*doTitle:			true
+XConsole*Command*resize:		false
+XConsole*background:			dimgrey
+XConsole*closeWindow.borderWidth:	2
+XConsole*closeWindow.bottom:		ChainTop
+XConsole*closeWindow.font:		-adobe-new century schoolbook-bold-r-normal--14-140-75-75-*
+XConsole*closeWindow.horizDistance:	452
+XConsole*closeWindow.internalHeight:	2
+XConsole*closeWindow.label:		Hide
+XConsole*closeWindow.left:		ChainRight
+XConsole*closeWindow.right:		ChainRight
+XConsole*closeWindow.top:		ChainTop
+XConsole*displayNonPrinting:		false
+XConsole*foreground:			gold
+XConsole*reverseVideo:			true
+XConsole*text*font:			fixed
+XConsole*text.borderWidth:		1
+XConsole*text.bottom:			ChainBottom
+XConsole*text.displayCaret:		false
+XConsole*text.fromVert:			title
+XConsole*text.height:			150
+XConsole*text.horizDistance:		6
+XConsole*text.left:			ChainLeft
+XConsole*text.right:			ChainRight
+XConsole*text.top:			ChainTop
+XConsole*text.width:			780
+XConsole*thickness:			10
+XConsole*title.borderWidth:		0
+XConsole*title.bottom:			ChainTop
+XConsole*title.label:			CONSOLE
+XConsole*title.left:			ChainLeft
+XConsole*title.right:			ChainLeft
+XConsole*title.top:			ChainTop
+XConsole*title.width:			150
+XConsole.autoRaise:			on
+XConsole.geometry:			+900+0
+XConsoleFrame.defaultDistance:		1
+
+!!! Xft
+Xft.antialias:			true
