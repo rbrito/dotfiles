@@ -1,0 +1,84 @@
+# -*- conf -*-
+# Rogério Brito's .procmailrc
+
+# VERBOSE=on
+
+# Which directory are paths relative to?
+MAILDIR=$HOME/Maildir/
+
+# File for storing procmail's log
+LOGFILE=mail.log
+
+# Default location of delivery
+DEFAULT=$HOME/Maildir/
+
+#-------------------------------------------------------------------
+# E-mail preprocessing
+#-------------------------------------------------------------------
+
+# Kill duplicate messages based on the "Message-Id" field
+:0 Wh: msgid.lock
+| formail -D 100000 msgid.cache
+
+# Save probable duplicates for inspection?
+:0 a:
+.dupes/
+
+:0fw
+| spamc
+
+:0
+* ^X-Spam-Status: Yes
+.Spam/
+
+# sanitizer
+:0fw
+| drop-alternatives
+
+# Add a "Lines: " header to messages so that Mutt doesn't display
+# a zero-line count for messages stored in Maildir format
+:0
+* ! ^Lines:
+{
+	:0Bfh
+	* $ H ?? ! ^Lines:
+	* -1^0
+	*  1^1  ^.*$
+	|formail -A "Lines: $="
+}
+
+#-------------------------------------------------------------------
+# Dealing with mailing lists
+#-------------------------------------------------------------------
+
+:0
+* ^From:.*freshmeat.net
+.Newsletters/
+
+:0
+* ^TOlame.*
+.Development.LAME/
+
+:0
+* ^From:.*eventos@ime.usp.br
+.IME/
+
+:0
+* ^Mailing-List:.*opeth-nectar@
+.nectar/
+
+:0
+* ^Sender:.*algorithms-\/[a-zA-Z\-]+
+.algorithms-${MATCH}/
+
+:0
+* ^X-Mailing-List:.*debian-\/[a-z0-9\-]+
+.Debian.debian-${MATCH}/
+
+:0
+* ^X-BeenThere:.*\/debconf-[a-zA-Z\-]+
+.${MATCH}/
+
+:0
+* ^X-Mailing-List:.*ticker-planetdebian
+.Debian.planetdebian/
