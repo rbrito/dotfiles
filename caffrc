@@ -1,0 +1,6 @@
+# .caffrc -- -*- perl -*-
+
+$CONFIG{'owner'} = 'Rogério Theodoro de Brito';
+$CONFIG{'email'} = 'rbrito@ime.usp.br';
+
+$CONFIG{'keyid'} = [ qw{0747BD39BCFCAAAA 085A9B327C2CAEB8} ];
