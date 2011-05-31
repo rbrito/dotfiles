@@ -1,0 +1,19 @@
+# SpamAssassin user preferences file.  See 'perldoc Mail::SpamAssassin::Conf'
+# for details of what can be tweaked.
+###########################################################################
+
+# How many hits before a mail is considered spam.
+# required_hits		5
+
+bayes_auto_expire	1
+
+# Wrap spams in a new message?
+report_safe		0
+
+# Use faster locking method when we aren't using NFS
+lock_method		flock
+
+# Adjustment of scores for some tests
+#score			ALL_TRUSTED		0
+
+whitelist_from		integers@westga.edu
