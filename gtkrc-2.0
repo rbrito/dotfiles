@@ -1,0 +1,9 @@
+gtk-enable-animations=0
+gtk-font-name="Sans 10"
+gtk-icon-theme-name="Faenza"
+gtk-key-theme-name="Emacs"
+gtk-menu-images=1
+gtk-print-backends="file,lpr,pdf"
+gtk-theme-name="Mist"
+#gtk-theme-name="Equinox"
+gtk-toolbar-style=GTK_TOOLBAR_ICONS
