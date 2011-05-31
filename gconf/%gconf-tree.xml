@@ -1,0 +1,2328 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="system">
+		<dir name="gstreamer">
+			<dir name="0.10">
+				<dir name="default">
+					<entry name="audiosrc" type="string">
+						<stringvalue>autoaudiosrc</stringvalue>
+					</entry>
+					<entry name="videosrc" type="string">
+						<stringvalue>autovideosrc</stringvalue>
+					</entry>
+					<entry name="videosink" type="string">
+						<stringvalue>autovideosink</stringvalue>
+					</entry>
+					<entry name="audiosink" type="string">
+						<stringvalue>autoaudiosink</stringvalue>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+	<dir name="desktop">
+		<dir name="gnome">
+			<dir name="typing_break">
+				<entry name="allow_postpone" type="bool" value="true"/>
+				<entry name="enabled" type="bool" value="false"/>
+			</dir>
+			<dir name="url-handlers">
+				<dir name="about">
+					<entry name="command" type="string">
+						<stringvalue>iceweasel -new-tab &quot;%s&quot;</stringvalue>
+					</entry>
+				</dir>
+				<dir name="unknown">
+					<entry name="command" type="string">
+						<stringvalue>iceweasel -new-tab &quot;%s&quot;</stringvalue>
+					</entry>
+				</dir>
+				<dir name="chrome">
+					<entry name="needs_terminal" type="bool" value="false"/>
+					<entry name="enabled" type="bool" value="true"/>
+					<entry name="command" type="string">
+						<stringvalue>iceweasel &quot;%s&quot;</stringvalue>
+					</entry>
+				</dir>
+				<dir name="ftp">
+					<entry name="needs_terminal" type="bool" value="false"/>
+					<entry name="enabled" type="bool" value="true"/>
+					<entry name="command" type="string">
+						<stringvalue>iceweasel &quot;%s&quot;</stringvalue>
+					</entry>
+				</dir>
+				<dir name="mailto">
+					<entry name="command" type="string">
+						<stringvalue>icedove %s</stringvalue>
+					</entry>
+				</dir>
+				<dir name="https">
+					<entry name="needs_terminal" type="bool" value="false"/>
+					<entry name="enabled" type="bool" value="true"/>
+					<entry name="command" type="string">
+						<stringvalue>iceweasel &quot;%s&quot;</stringvalue>
+					</entry>
+				</dir>
+				<dir name="http">
+					<entry name="needs_terminal" type="bool" value="false"/>
+					<entry name="enabled" type="bool" value="true"/>
+					<entry name="command" type="string">
+						<stringvalue>iceweasel &quot;%s&quot;</stringvalue>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="applications">
+				<dir name="terminal">
+					<entry name="exec_arg" type="string">
+						<stringvalue>-e</stringvalue>
+					</entry>
+					<entry name="exec" type="string">
+						<stringvalue>rxvt</stringvalue>
+					</entry>
+				</dir>
+				<dir name="media">
+					<entry name="exec" type="string">
+						<stringvalue>smplayer</stringvalue>
+					</entry>
+				</dir>
+				<dir name="browser">
+					<entry name="exec" type="string">
+						<stringvalue>iceweasel</stringvalue>
+					</entry>
+					<entry name="nremote" type="bool" value="true"/>
+				</dir>
+			</dir>
+			<dir name="background">
+				<entry name="picture_filename" type="string">
+					<stringvalue></stringvalue>
+				</entry>
+				<entry name="primary_color" type="string">
+					<stringvalue>#2c2c00001e1e</stringvalue>
+				</entry>
+				<entry name="secondary_color" type="string">
+					<stringvalue>#2c2c00001e1e</stringvalue>
+				</entry>
+				<entry name="color_shading_type" type="string">
+					<stringvalue>solid</stringvalue>
+				</entry>
+				<entry name="picture_options" type="string">
+					<stringvalue>none</stringvalue>
+				</entry>
+			</dir>
+			<dir name="accessibility">
+				<dir name="mouse">
+					<entry name="dwell_enable" type="bool" value="false"/>
+				</dir>
+				<dir name="keyboard">
+					<entry name="mousekeys_enable" type="bool" value="false"/>
+					<entry name="stickykeys_two_key_off" type="bool" value="true"/>
+					<entry name="mousekeys_max_speed" type="int" value="750"/>
+					<entry name="timeout" type="int" value="120"/>
+					<entry name="timeout_enable" type="bool" value="true"/>
+					<entry name="bouncekeys_beep_reject" type="bool" value="true"/>
+					<entry name="mousekeys_accel_time" type="int" value="1200"/>
+					<entry name="mousekeys_init_delay" type="int" value="160"/>
+					<entry name="slowkeys_beep_reject" type="bool" value="false"/>
+					<entry name="slowkeys_beep_accept" type="bool" value="true"/>
+					<entry name="slowkeys_enable" type="bool" value="false"/>
+					<entry name="stickykeys_modifier_beep" type="bool" value="true"/>
+					<entry name="bouncekeys_enable" type="bool" value="false"/>
+					<entry name="togglekeys_enable" type="bool" value="false"/>
+					<entry name="stickykeys_enable" type="bool" value="false"/>
+					<entry name="slowkeys_beep_press" type="bool" value="true"/>
+					<entry name="bouncekeys_delay" type="int" value="300"/>
+					<entry name="slowkeys_delay" type="int" value="300"/>
+					<entry name="feature_state_change_beep" type="bool" value="true"/>
+					<entry name="enable" type="bool" value="false"/>
+				</dir>
+			</dir>
+			<dir name="interface">
+				<entry name="gtk_color_scheme" type="string">
+					<stringvalue>fg_color:#e6e6e6e6e6e6
+bg_color:#555557575353
+text_color:#2e2e34343636
+base_color:#d3d3d7d7cfcf
+selected_fg_color:#7a7aa3a3cccc
+selected_bg_color:#3f3f40403d3d
+tooltip_fg_color:#000000000000
+tooltip_bg_color:#ededdede5c5c</stringvalue>
+				</entry>
+				<entry name="gtk_key_theme" type="string">
+					<stringvalue>Emacs</stringvalue>
+				</entry>
+				<entry name="cursor_blink_time" type="int" value="1000"/>
+				<entry name="enable_animations" type="bool" value="false"/>
+				<entry name="font_name" type="string">
+					<stringvalue>Sans 10</stringvalue>
+				</entry>
+				<entry name="document_font_name" type="string">
+					<stringvalue>Sans 10</stringvalue>
+				</entry>
+				<entry name="monospace_font_name" type="string">
+					<stringvalue>Monospace 10</stringvalue>
+				</entry>
+				<entry name="can_change_accels" type="bool" value="false"/>
+				<entry name="menus_have_tearoff" type="bool" value="false"/>
+				<entry name="menubar_detachable" type="bool" value="false"/>
+				<entry name="accessibility" type="bool" value="true"/>
+				<entry name="menus_have_icons" type="bool" value="true"/>
+				<entry name="icon_theme" type="string">
+					<stringvalue>Faenza-Darkest</stringvalue>
+				</entry>
+				<entry name="gtk_theme" type="string">
+					<stringvalue>Darklooks</stringvalue>
+				</entry>
+			</dir>
+			<dir name="sound">
+				<entry name="event_sounds" type="bool" value="false"/>
+			</dir>
+			<dir name="font_rendering">
+				<entry name="dpi" type="float" value="96"/>
+				<entry name="hinting" type="string">
+					<stringvalue>full</stringvalue>
+				</entry>
+				<entry name="antialiasing" type="string">
+					<stringvalue>grayscale</stringvalue>
+				</entry>
+			</dir>
+			<dir name="peripherals">
+				<dir name="mouse">
+					<entry name="cursor_theme" type="string">
+						<stringvalue>default</stringvalue>
+					</entry>
+					<entry name="cursor_size" type="int" value="18"/>
+				</dir>
+				<dir name="SynPS@47@2@32@Synaptics@32@TouchPad">
+					<entry name="device_type" type="string">
+						<stringvalue>touchpad</stringvalue>
+					</entry>
+				</dir>
+				<dir name="keyboard">
+					<dir name="host-dumont">
+						<dir name="0">
+							<entry name="numlock_on" type="bool" value="false"/>
+						</dir>
+					</dir>
+					<dir name="host-brazil">
+						<dir name="0">
+							<entry name="numlock_on" type="bool" value="false"/>
+						</dir>
+					</dir>
+					<dir name="general">
+						<entry name="groupPerWindow" type="bool" value="false"/>
+					</dir>
+				</dir>
+				<dir name="touchpad">
+					<entry name="touchpad_enabled" type="bool" value="true"/>
+					<entry name="disable_while_typing" type="bool" value="false"/>
+					<entry name="horiz_scroll_enabled" type="bool" value="false"/>
+					<entry name="tap_to_click" type="bool" value="true"/>
+					<entry name="scroll_method" type="int" value="1"/>
+					<entry name="config_migration_needed" type="bool" value="false"/>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+	<dir name="apps">
+		<dir name="procman">
+			<entry name="graph_update_interval" type="int" value="4000"/>
+			<entry name="current_tab" type="int" value="2"/>
+			<entry name="height" type="int" value="578"/>
+			<entry name="width" type="int" value="613"/>
+			<dir name="disktreenew">
+				<entry name="columns_order" type="list" ltype="int">
+					<li type="int" value="0"/>
+					<li type="int" value="1"/>
+					<li type="int" value="2"/>
+					<li type="int" value="3"/>
+					<li type="int" value="4"/>
+					<li type="int" value="5"/>
+					<li type="int" value="6"/>
+				</entry>
+				<entry name="col_6_visible" type="bool" value="true"/>
+				<entry name="col_6_width" type="int" value="178"/>
+				<entry name="col_5_visible" type="bool" value="true"/>
+				<entry name="col_5_width" type="int" value="83"/>
+				<entry name="col_4_visible" type="bool" value="true"/>
+				<entry name="col_4_width" type="int" value="54"/>
+				<entry name="col_3_visible" type="bool" value="true"/>
+				<entry name="col_3_width" type="int" value="56"/>
+				<entry name="col_2_visible" type="bool" value="true"/>
+				<entry name="col_2_width" type="int" value="55"/>
+				<entry name="col_1_visible" type="bool" value="true"/>
+				<entry name="col_1_width" type="int" value="85"/>
+				<entry name="col_0_visible" type="bool" value="true"/>
+				<entry name="col_0_width" type="int" value="70"/>
+				<entry name="sort_order" type="int" value="0"/>
+				<entry name="sort_col" type="int" value="1"/>
+			</dir>
+			<dir name="proctree">
+				<entry name="columns_order" type="list" ltype="int">
+					<li type="int" value="0"/>
+					<li type="int" value="1"/>
+					<li type="int" value="2"/>
+					<li type="int" value="3"/>
+					<li type="int" value="4"/>
+					<li type="int" value="5"/>
+					<li type="int" value="6"/>
+					<li type="int" value="7"/>
+					<li type="int" value="8"/>
+					<li type="int" value="9"/>
+					<li type="int" value="10"/>
+					<li type="int" value="11"/>
+					<li type="int" value="12"/>
+					<li type="int" value="13"/>
+					<li type="int" value="14"/>
+					<li type="int" value="15"/>
+					<li type="int" value="16"/>
+				</entry>
+				<entry name="col_16_visible" type="bool" value="true"/>
+				<entry name="col_16_width" type="int" value="128"/>
+				<entry name="col_15_visible" type="bool" value="true"/>
+				<entry name="col_15_width" type="int" value="79"/>
+				<entry name="col_14_visible" type="bool" value="false"/>
+				<entry name="col_14_width" type="int" value="0"/>
+				<entry name="col_13_visible" type="bool" value="false"/>
+				<entry name="col_13_width" type="int" value="0"/>
+				<entry name="col_12_visible" type="bool" value="true"/>
+				<entry name="col_12_width" type="int" value="40"/>
+				<entry name="col_11_visible" type="bool" value="true"/>
+				<entry name="col_11_width" type="int" value="55"/>
+				<entry name="col_10_visible" type="bool" value="false"/>
+				<entry name="col_10_width" type="int" value="0"/>
+				<entry name="col_9_visible" type="bool" value="false"/>
+				<entry name="col_9_width" type="int" value="0"/>
+				<entry name="col_8_visible" type="bool" value="true"/>
+				<entry name="col_8_width" type="int" value="70"/>
+				<entry name="col_7_visible" type="bool" value="false"/>
+				<entry name="col_7_width" type="int" value="0"/>
+				<entry name="col_6_visible" type="bool" value="false"/>
+				<entry name="col_6_width" type="int" value="0"/>
+				<entry name="col_5_visible" type="bool" value="false"/>
+				<entry name="col_5_width" type="int" value="0"/>
+				<entry name="col_4_visible" type="bool" value="false"/>
+				<entry name="col_4_width" type="int" value="0"/>
+				<entry name="col_3_visible" type="bool" value="false"/>
+				<entry name="col_3_width" type="int" value="0"/>
+				<entry name="col_2_visible" type="bool" value="true"/>
+				<entry name="col_2_width" type="int" value="69"/>
+				<entry name="col_1_visible" type="bool" value="false"/>
+				<entry name="col_1_width" type="int" value="0"/>
+				<entry name="col_0_visible" type="bool" value="true"/>
+				<entry name="col_0_width" type="int" value="198"/>
+				<entry name="sort_order" type="int" value="0"/>
+				<entry name="sort_col" type="int" value="0"/>
+			</dir>
+		</dir>
+		<dir name="gnome_settings_daemon">
+			<dir name="xrandr">
+				<entry name="show_notification_icon" type="bool" value="true"/>
+			</dir>
+		</dir>
+		<dir name="sensors-applet">
+			<entry name="font-size" type="int" value="9"/>
+			<entry name="hide-units" type="bool" value="true"/>
+		</dir>
+		<dir name="gnome-screensaver">
+			<entry name="mode" type="string">
+				<stringvalue>blank-only</stringvalue>
+			</entry>
+			<entry name="lock_enabled" type="bool" value="false"/>
+		</dir>
+		<dir name="gnome-power-manager">
+			<dir name="disks">
+				<entry name="spindown_enable_battery" type="bool" value="true"/>
+				<entry name="spindown_enable_ac" type="bool" value="true"/>
+			</dir>
+			<dir name="actions">
+				<entry name="critical_battery" type="string">
+					<stringvalue>hibernate</stringvalue>
+				</entry>
+			</dir>
+			<dir name="buttons">
+				<entry name="suspend" type="string">
+					<stringvalue>suspend</stringvalue>
+				</entry>
+				<entry name="power" type="string">
+					<stringvalue>interactive</stringvalue>
+				</entry>
+				<entry name="lid_battery" type="string">
+					<stringvalue>suspend</stringvalue>
+				</entry>
+				<entry name="lid_ac" type="string">
+					<stringvalue>suspend</stringvalue>
+				</entry>
+			</dir>
+			<dir name="ui">
+				<entry name="icon_policy" type="string">
+					<stringvalue>always</stringvalue>
+				</entry>
+			</dir>
+			<dir name="timeout">
+				<entry name="sleep_display_ac" type="int" value="600"/>
+			</dir>
+			<dir name="backlight">
+				<entry name="idle_dim_battery" type="bool" value="true"/>
+				<entry name="battery_reduce" type="bool" value="true"/>
+				<entry name="idle_dim_ac" type="bool" value="false"/>
+			</dir>
+		</dir>
+		<dir name="gnome-terminal">
+			<dir name="global">
+				<entry name="use_mnemonics" type="bool" value="false"/>
+				<entry name="active_encodings" type="list" ltype="string">
+					<li type="string">
+						<stringvalue>UTF-8</stringvalue>
+					</li>
+				</entry>
+			</dir>
+			<dir name="profiles">
+				<dir name="Default">
+					<entry name="default_show_menubar" type="bool" value="false"/>
+					<entry name="default_size_rows" type="int" value="43"/>
+					<entry name="default_size_columns" type="int" value="132"/>
+					<entry name="use_theme_background" type="bool" value="false"/>
+					<entry name="use_system_font" type="bool" value="true"/>
+					<entry name="use_theme_colors" type="bool" value="false"/>
+					<entry name="visible_name" type="string">
+						<stringvalue>Default</stringvalue>
+					</entry>
+					<entry name="alternate_screen_scroll" type="bool" value="true"/>
+					<entry name="palette" type="string">
+						<stringvalue>#000000000000:#CDCD00000000:#0000CDCD0000:#CDCDCDCD0000:#00000000CDCD:#CDCD0000CDCD:#0000CDCDCDCD:#FAFAEBEBD7D7:#404040404040:#FFFF00000000:#0000FFFF0000:#FFFFFFFF0000:#00000000FFFF:#FFFF0000FFFF:#0000FFFFFFFF:#FFFFFFFFFFFF</stringvalue>
+					</entry>
+					<entry name="background_color" type="string">
+						<stringvalue>#000000000000</stringvalue>
+					</entry>
+					<entry name="foreground_color" type="string">
+						<stringvalue>#FFFFFFFFFFFF</stringvalue>
+					</entry>
+					<entry name="bold_color" type="string">
+						<stringvalue>#000000000000</stringvalue>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="metacity">
+			<dir name="global_keybindings">
+				<entry name="switch_windows_backward" type="string">
+					<stringvalue>&lt;Shift&gt;&lt;Alt&gt;Tab</stringvalue>
+				</entry>
+			</dir>
+			<dir name="window_keybindings">
+				<entry name="move_to_corner_se" type="string">
+					<stringvalue>&lt;Super&gt;KP_Next</stringvalue>
+				</entry>
+				<entry name="move_to_corner_sw" type="string">
+					<stringvalue>&lt;Super&gt;KP_End</stringvalue>
+				</entry>
+				<entry name="move_to_corner_ne" type="string">
+					<stringvalue>&lt;Super&gt;KP_Prior</stringvalue>
+				</entry>
+				<entry name="move_to_corner_nw" type="string">
+					<stringvalue>&lt;Super&gt;KP_Home</stringvalue>
+				</entry>
+				<entry name="move_to_side_s" type="string">
+					<stringvalue>&lt;Super&gt;KP_Down</stringvalue>
+				</entry>
+				<entry name="move_to_side_n" type="string">
+					<stringvalue>&lt;Super&gt;KP_Up</stringvalue>
+				</entry>
+				<entry name="move_to_side_e" type="string">
+					<stringvalue>&lt;Super&gt;KP_Right</stringvalue>
+				</entry>
+				<entry name="move_to_side_w" type="string">
+					<stringvalue>&lt;Super&gt;KP_Left</stringvalue>
+				</entry>
+				<entry name="toggle_maximized" type="string">
+					<stringvalue>disabled</stringvalue>
+				</entry>
+				<entry name="maximize" type="string">
+					<stringvalue>&lt;Alt&gt;F10</stringvalue>
+				</entry>
+				<entry name="toggle_shaded" type="string">
+					<stringvalue>&lt;Control&gt;&lt;Alt&gt;s</stringvalue>
+				</entry>
+			</dir>
+			<dir name="general">
+				<entry name="titlebar_font" type="string">
+					<stringvalue>Sans Bold 10</stringvalue>
+				</entry>
+				<entry name="auto_raise" type="bool" value="false"/>
+				<entry name="visual_bell_type" type="string">
+					<stringvalue>frame_flash</stringvalue>
+				</entry>
+				<entry name="focus_mode" type="string">
+					<stringvalue>sloppy</stringvalue>
+				</entry>
+				<entry name="button_layout" type="string">
+					<stringvalue>menu:minimize,maximize,close</stringvalue>
+				</entry>
+				<entry name="num_workspaces" type="int" value="4"/>
+				<entry name="theme" type="string">
+					<stringvalue>Clearlooks</stringvalue>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="panel">
+			<dir name="applets">
+				<dir name="applet_13">
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>bonobo-applet</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid" type="string">
+						<stringvalue>OAFIID:GNOME_CPUFreqApplet</stringvalue>
+					</entry>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="1452"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+					<dir name="prefs">
+						<entry name="show_text_mode" schema="/schemas/apps/cpufreq-applet/prefs/show_text_mode" type="int" value="0"/>
+						<entry name="show_mode" schema="/schemas/apps/cpufreq-applet/prefs/show_mode" type="int" value="2"/>
+						<entry name="cpu" schema="/schemas/apps/cpufreq-applet/prefs/cpu"/>
+					</dir>
+				</dir>
+				<dir name="applet_12">
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>bonobo-applet</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid" type="string">
+						<stringvalue>OAFIID:GNOME_CPUFreqApplet</stringvalue>
+					</entry>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="1478"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+					<dir name="prefs">
+						<entry name="show_text_mode" schema="/schemas/apps/cpufreq-applet/prefs/show_text_mode" type="int" value="0"/>
+						<entry name="show_mode" schema="/schemas/apps/cpufreq-applet/prefs/show_mode" type="int" value="2"/>
+						<entry name="cpu" schema="/schemas/apps/cpufreq-applet/prefs/cpu" type="int" value="1"/>
+					</dir>
+				</dir>
+				<dir name="applet_4">
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>bonobo-applet</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="true"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid" type="string">
+						<stringvalue>OAFIID:GNOME_IndicatorAppletComplete</stringvalue>
+					</entry>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="1"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+				</dir>
+				<dir name="applet_11">
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>bonobo-applet</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid" type="string">
+						<stringvalue>OAFIID:SensorsApplet</stringvalue>
+					</entry>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="840"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+					<dir name="prefs">
+						<entry name="sensors_applet_version" type="string">
+							<stringvalue>2.2.7</stringvalue>
+						</entry>
+						<entry name="graph_colors" type="list" ltype="string">
+							<li type="string">
+								<stringvalue>#ff0000</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>#ff0000</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>#ff0000</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>#ff0000</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>#ff0000</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>#ff0000</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>#ff0000</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>#ff0000</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>#ff0000</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>#ff0000</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>#ff0000</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>#ff0000</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>#ff0000</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>#ff0000</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>#ff0000</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>#ff0000</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>#ff0000</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>#ff0000</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>#ff0000</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>#ff0000</stringvalue>
+							</li>
+						</entry>
+						<entry name="icon_types" type="list" ltype="int">
+							<li type="int" value="1"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="5"/>
+							<li type="int" value="5"/>
+							<li type="int" value="5"/>
+							<li type="int" value="5"/>
+							<li type="int" value="5"/>
+							<li type="int" value="5"/>
+							<li type="int" value="5"/>
+							<li type="int" value="5"/>
+							<li type="int" value="5"/>
+							<li type="int" value="6"/>
+							<li type="int" value="6"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+						</entry>
+						<entry name="offsets" type="list" ltype="int">
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+						</entry>
+						<entry name="multipliers" type="list" ltype="int">
+							<li type="int" value="1000"/>
+							<li type="int" value="1000"/>
+							<li type="int" value="1000"/>
+							<li type="int" value="1000"/>
+							<li type="int" value="1000"/>
+							<li type="int" value="1000"/>
+							<li type="int" value="1000"/>
+							<li type="int" value="1000"/>
+							<li type="int" value="1000"/>
+							<li type="int" value="1000"/>
+							<li type="int" value="1000"/>
+							<li type="int" value="1000"/>
+							<li type="int" value="1000"/>
+							<li type="int" value="1000"/>
+							<li type="int" value="1000"/>
+							<li type="int" value="1000"/>
+							<li type="int" value="1000"/>
+							<li type="int" value="1000"/>
+							<li type="int" value="1000"/>
+							<li type="int" value="1000"/>
+						</entry>
+						<entry name="alarm_timeouts" type="list" ltype="int">
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+							<li type="int" value="0"/>
+						</entry>
+						<entry name="high_alarm_commands" type="list" ltype="string">
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+						</entry>
+						<entry name="low_alarm_commands" type="list" ltype="string">
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue></stringvalue>
+							</li>
+						</entry>
+						<entry name="alarm_enables" type="list" ltype="bool">
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+						</entry>
+						<entry name="high_values" type="list" ltype="int">
+							<li type="int" value="60000"/>
+							<li type="int" value="60000"/>
+							<li type="int" value="70000"/>
+							<li type="int" value="80000"/>
+							<li type="int" value="100000"/>
+							<li type="int" value="100000"/>
+							<li type="int" value="1104"/>
+							<li type="int" value="408"/>
+							<li type="int" value="2292"/>
+							<li type="int" value="432"/>
+							<li type="int" value="1452"/>
+							<li type="int" value="432"/>
+							<li type="int" value="2208"/>
+							<li type="int" value="432"/>
+							<li type="int" value="0"/>
+							<li type="int" value="3000000"/>
+							<li type="int" value="3000000"/>
+							<li type="int" value="127000"/>
+							<li type="int" value="127000"/>
+							<li type="int" value="127000"/>
+						</entry>
+						<entry name="low_values" type="list" ltype="int">
+							<li type="int" value="20000"/>
+							<li type="int" value="20000"/>
+							<li type="int" value="20000"/>
+							<li type="int" value="20000"/>
+							<li type="int" value="20000"/>
+							<li type="int" value="20000"/>
+							<li type="int" value="1068"/>
+							<li type="int" value="528"/>
+							<li type="int" value="1608"/>
+							<li type="int" value="3528"/>
+							<li type="int" value="528"/>
+							<li type="int" value="912"/>
+							<li type="int" value="768"/>
+							<li type="int" value="672"/>
+							<li type="int" value="0"/>
+							<li type="int" value="12000"/>
+							<li type="int" value="0"/>
+							<li type="int" value="127000"/>
+							<li type="int" value="127000"/>
+							<li type="int" value="127000"/>
+						</entry>
+						<entry name="sensor_enables" type="list" ltype="bool">
+							<li type="bool" value="true"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="true"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+							<li type="bool" value="false"/>
+						</entry>
+						<entry name="sensor_types" type="list" ltype="int">
+							<li type="int" value="2"/>
+							<li type="int" value="2"/>
+							<li type="int" value="2"/>
+							<li type="int" value="2"/>
+							<li type="int" value="2"/>
+							<li type="int" value="2"/>
+							<li type="int" value="3"/>
+							<li type="int" value="3"/>
+							<li type="int" value="3"/>
+							<li type="int" value="3"/>
+							<li type="int" value="3"/>
+							<li type="int" value="3"/>
+							<li type="int" value="3"/>
+							<li type="int" value="3"/>
+							<li type="int" value="3"/>
+							<li type="int" value="1"/>
+							<li type="int" value="1"/>
+							<li type="int" value="2"/>
+							<li type="int" value="2"/>
+							<li type="int" value="2"/>
+						</entry>
+						<entry name="interfaces" type="list" ltype="string">
+							<li type="string">
+								<stringvalue>udisks</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>acpi</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>libsensors</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>libsensors</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>libsensors</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>libsensors</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>libsensors</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>libsensors</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>libsensors</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>libsensors</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>libsensors</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>libsensors</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>libsensors</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>libsensors</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>libsensors</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>libsensors</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>libsensors</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>libsensors</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>libsensors</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>libsensors</stringvalue>
+							</li>
+						</entry>
+						<entry name="labels" type="list" ltype="string">
+							<li type="string">
+								<stringvalue>HD</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>CPU</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>temp1</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>temp1</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>Core 0</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>Core 1</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>in0</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>in1</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>in2</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>+3.3V</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>in4</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>in5</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>in6</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>3VSB</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>Vbat</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>fan1</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>fan2</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>temp1</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>temp2</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>temp3</stringvalue>
+							</li>
+						</entry>
+						<entry name="ids" type="list" ltype="string">
+							<li type="string">
+								<stringvalue>/dev/sda</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>THRM</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>temp1</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>temp1</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>Core 0</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>Core 1</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>in0</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>in1</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>in2</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>+3.3V</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>in4</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>in5</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>in6</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>3VSB</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>Vbat</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>fan1</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>fan2</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>temp1</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>temp2</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>temp3</stringvalue>
+							</li>
+						</entry>
+						<entry name="paths" type="list" ltype="string">
+							<li type="string">
+								<stringvalue>/org/freedesktop/UDisks/devices/sda</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>/proc/acpi/thermal_zone/THRM/temperature</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>sensor://k10temp-pci-00c3/0</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>sensor://acpitz-virtual-0/0</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>sensor://coretemp-isa-0000/0</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>sensor://coretemp-isa-0001/0</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>sensor://it8721-isa-0e80/0</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>sensor://it8721-isa-0e80/5</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>sensor://it8721-isa-0e80/10</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>sensor://it8721-isa-0e80/15</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>sensor://it8721-isa-0e80/20</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>sensor://it8721-isa-0e80/25</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>sensor://it8721-isa-0e80/30</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>sensor://it8721-isa-0e80/35</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>sensor://it8721-isa-0e80/40</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>sensor://it8721-isa-0e80/41</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>sensor://it8721-isa-0e80/45</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>sensor://it8721-isa-0e80/49</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>sensor://it8721-isa-0e80/55</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>sensor://it8721-isa-0e80/61</stringvalue>
+							</li>
+						</entry>
+						<entry name="libsensors" type="bool" value="true"/>
+						<entry name="acpi" type="bool" value="true"/>
+						<entry name="udisks" type="bool" value="true"/>
+						<entry name="setup" type="bool" value="true"/>
+						<entry name="display_notifications" type="bool" value="false"/>
+						<entry name="graph_size" type="int" value="42"/>
+						<entry name="timeout_delay" type="int" value="2000"/>
+						<entry name="temperature_scale" type="int" value="1"/>
+						<entry name="layout_mode" type="int" value="0"/>
+						<entry name="display_mode" type="int" value="1"/>
+					</dir>
+				</dir>
+				<dir name="applet_8">
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>panel_0</stringvalue>
+					</entry>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>bonobo-applet</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid" type="string">
+						<stringvalue>OAFIID:GNOME_WorkspaceSwitcherApplet</stringvalue>
+					</entry>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="1279"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked" type="bool" value="true"/>
+					<dir name="prefs">
+						<entry name="display_all_workspaces" schema="/schemas/apps/workspace_switcher_applet/prefs/display_all_workspaces" type="bool" value="true"/>
+						<entry name="display_workspace_names" schema="/schemas/apps/workspace_switcher_applet/prefs/display_workspace_names"/>
+						<entry name="num_rows" schema="/schemas/apps/workspace_switcher_applet/prefs/num_rows" type="int" value="1"/>
+					</dir>
+				</dir>
+				<dir name="applet_7">
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>panel_0</stringvalue>
+					</entry>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>bonobo-applet</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid" type="string">
+						<stringvalue>OAFIID:GNOME_WindowListApplet</stringvalue>
+					</entry>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="24"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked" type="bool" value="true"/>
+					<dir name="prefs">
+						<entry name="maximum_size" schema="/schemas/apps/window_list_applet/prefs/maximum_size"/>
+						<entry name="display_all_workspaces" schema="/schemas/apps/window_list_applet/prefs/display_all_workspaces"/>
+						<entry name="group_windows" schema="/schemas/apps/window_list_applet/prefs/group_windows"/>
+						<entry name="move_unminimized_windows" schema="/schemas/apps/window_list_applet/prefs/move_unminimized_windows"/>
+						<entry name="minimum_size" schema="/schemas/apps/window_list_applet/prefs/minimum_size"/>
+					</dir>
+				</dir>
+				<dir name="applet_6">
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>panel_0</stringvalue>
+					</entry>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>bonobo-applet</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="true"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid" type="string">
+						<stringvalue>OAFIID:GNOME_Panel_TrashApplet</stringvalue>
+					</entry>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="1"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked" type="bool" value="true"/>
+				</dir>
+				<dir name="applet_5">
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>panel_0</stringvalue>
+					</entry>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>bonobo-applet</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid" type="string">
+						<stringvalue>OAFIID:GNOME_ShowDesktopApplet</stringvalue>
+					</entry>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="0"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked" type="bool" value="true"/>
+				</dir>
+				<dir name="applet_9">
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="3"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>bonobo-applet</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="true"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid" type="string">
+						<stringvalue>OAFIID:GNOME_MixerApplet</stringvalue>
+					</entry>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+				</dir>
+				<dir name="applet_3">
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="175"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>bonobo-applet</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="true"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid" type="string">
+						<stringvalue>OAFIID:GNOME_IndicatorAppletComplete</stringvalue>
+					</entry>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+				</dir>
+				<dir name="notification_area_screen0">
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="279"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>bonobo-applet</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="true"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked" type="bool" value="false"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid" type="string">
+						<stringvalue>OAFIID:GNOME_NotificationAreaApplet</stringvalue>
+					</entry>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+				</dir>
+				<dir name="clock_screen0">
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="2"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>bonobo-applet</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="true"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked" type="bool" value="false"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid" type="string">
+						<stringvalue>OAFIID:GNOME_ClockApplet</stringvalue>
+					</entry>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+					<dir name="prefs">
+						<entry name="hour_format" schema="/schemas/apps/clock_applet/prefs/hour_format"/>
+						<entry name="temperature_unit" schema="/schemas/apps/clock_applet/prefs/temperature_unit" type="string">
+							<stringvalue>C</stringvalue>
+						</entry>
+						<entry name="expand_locations" schema="/schemas/apps/clock_applet/prefs/expand_locations" type="bool" value="true"/>
+						<entry name="unix_time" schema="/schemas/apps/clock_applet/prefs/unix_time"/>
+						<entry name="show_temperature" schema="/schemas/apps/clock_applet/prefs/show_temperature"/>
+						<entry name="format" schema="/schemas/apps/clock_applet/prefs/format" type="string">
+							<stringvalue>24-hour</stringvalue>
+						</entry>
+						<entry name="config_tool" schema="/schemas/apps/clock_applet/prefs/config_tool"/>
+						<entry name="expand_birthdays" schema="/schemas/apps/clock_applet/prefs/expand_birthdays"/>
+						<entry name="show_date" schema="/schemas/apps/clock_applet/prefs/show_date" type="bool" value="false"/>
+						<entry name="expand_appointments" schema="/schemas/apps/clock_applet/prefs/expand_appointments"/>
+						<entry name="speed_unit" schema="/schemas/apps/clock_applet/prefs/speed_unit" type="string">
+							<stringvalue>km/h</stringvalue>
+						</entry>
+						<entry name="expand_weather" schema="/schemas/apps/clock_applet/prefs/expand_weather"/>
+						<entry name="show_seconds" schema="/schemas/apps/clock_applet/prefs/show_seconds"/>
+						<entry name="internet_time" schema="/schemas/apps/clock_applet/prefs/internet_time"/>
+						<entry name="show_week_numbers" schema="/schemas/apps/clock_applet/prefs/show_week_numbers"/>
+						<entry name="expand_tasks" schema="/schemas/apps/clock_applet/prefs/expand_tasks"/>
+						<entry name="show_weather" schema="/schemas/apps/clock_applet/prefs/show_weather"/>
+						<entry name="gmt_time" schema="/schemas/apps/clock_applet/prefs/gmt_time"/>
+						<entry name="show_tooltip" schema="/schemas/apps/clock_applet/prefs/show_tooltip"/>
+						<entry name="custom_format" schema="/schemas/apps/clock_applet/prefs/custom_format"/>
+						<entry name="cities" schema="/schemas/apps/clock_applet/prefs/cities" type="list" ltype="string">
+							<li type="string">
+								<stringvalue>&lt;location name=&quot;&quot; city=&quot;Guarulhos&quot; timezone=&quot;America/Sao_Paulo&quot; latitude=&quot;-23.433332&quot; longitude=&quot;-46.466667&quot; code=&quot;SBGR&quot; current=&quot;true&quot;/&gt;</stringvalue>
+							</li>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="applet_1">
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="1530"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>bonobo-applet</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid" type="string">
+						<stringvalue>OAFIID:GNOME_CPUFreqApplet</stringvalue>
+					</entry>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+					<dir name="prefs">
+						<entry name="show_mode" schema="/schemas/apps/cpufreq-applet/prefs/show_mode" type="int" value="2"/>
+						<entry name="show_text_mode" schema="/schemas/apps/cpufreq-applet/prefs/show_text_mode" type="int" value="0"/>
+						<entry name="cpu" schema="/schemas/apps/cpufreq-applet/prefs/cpu" type="int" value="3"/>
+					</dir>
+				</dir>
+				<dir name="applet_0">
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="1504"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>bonobo-applet</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid" type="string">
+						<stringvalue>OAFIID:GNOME_CPUFreqApplet</stringvalue>
+					</entry>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+					<dir name="prefs">
+						<entry name="show_mode" schema="/schemas/apps/cpufreq-applet/prefs/show_mode" type="int" value="2"/>
+						<entry name="show_text_mode" schema="/schemas/apps/cpufreq-applet/prefs/show_text_mode" type="int" value="0"/>
+						<entry name="cpu" schema="/schemas/apps/cpufreq-applet/prefs/cpu" type="int" value="2"/>
+					</dir>
+				</dir>
+				<dir name="applet_2">
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="1556"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>bonobo-applet</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid" type="string">
+						<stringvalue>OAFIID:GNOME_MultiLoadApplet</stringvalue>
+					</entry>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+					<dir name="prefs">
+						<entry name="cpuload_color4" schema="/schemas/apps/multiload/prefs/cpuload_color4"/>
+						<entry name="cpuload_color3" schema="/schemas/apps/multiload/prefs/cpuload_color3"/>
+						<entry name="cpuload_color2" schema="/schemas/apps/multiload/prefs/cpuload_color2"/>
+						<entry name="cpuload_color1" schema="/schemas/apps/multiload/prefs/cpuload_color1"/>
+						<entry name="view_diskload" schema="/schemas/apps/multiload/prefs/view_diskload"/>
+						<entry name="cpuload_color0" schema="/schemas/apps/multiload/prefs/cpuload_color0"/>
+						<entry name="diskload_color1" schema="/schemas/apps/multiload/prefs/diskload_color1"/>
+						<entry name="diskload_color0" schema="/schemas/apps/multiload/prefs/diskload_color0"/>
+						<entry name="diskload_color2" schema="/schemas/apps/multiload/prefs/diskload_color2"/>
+						<entry name="memload_color4" schema="/schemas/apps/multiload/prefs/memload_color4"/>
+						<entry name="memload_color3" schema="/schemas/apps/multiload/prefs/memload_color3"/>
+						<entry name="memload_color2" schema="/schemas/apps/multiload/prefs/memload_color2"/>
+						<entry name="view_cpuload" schema="/schemas/apps/multiload/prefs/view_cpuload"/>
+						<entry name="memload_color1" schema="/schemas/apps/multiload/prefs/memload_color1"/>
+						<entry name="memload_color0" schema="/schemas/apps/multiload/prefs/memload_color0"/>
+						<entry name="loadavg_color1" schema="/schemas/apps/multiload/prefs/loadavg_color1"/>
+						<entry name="loadavg_color0" schema="/schemas/apps/multiload/prefs/loadavg_color0"/>
+						<entry name="view_loadavg" schema="/schemas/apps/multiload/prefs/view_loadavg"/>
+						<entry name="view_netload" schema="/schemas/apps/multiload/prefs/view_netload" type="bool" value="true"/>
+						<entry name="view_memload" schema="/schemas/apps/multiload/prefs/view_memload" type="bool" value="true"/>
+						<entry name="netload2_color2" schema="/schemas/apps/multiload/prefs/netload2_color2"/>
+						<entry name="netload2_color3" schema="/schemas/apps/multiload/prefs/netload2_color3"/>
+						<entry name="size" schema="/schemas/apps/multiload/prefs/size"/>
+						<entry name="speed" schema="/schemas/apps/multiload/prefs/speed" type="int" value="1500"/>
+						<entry name="netload2_color1" schema="/schemas/apps/multiload/prefs/netload2_color1"/>
+						<entry name="netload2_color0" schema="/schemas/apps/multiload/prefs/netload2_color0"/>
+						<entry name="system_monitor" schema="/schemas/apps/multiload/prefs/system_monitor"/>
+						<entry name="view_swapload" schema="/schemas/apps/multiload/prefs/view_swapload"/>
+						<entry name="swapload_color1" schema="/schemas/apps/multiload/prefs/swapload_color1"/>
+						<entry name="swapload_color0" schema="/schemas/apps/multiload/prefs/swapload_color0"/>
+					</dir>
+				</dir>
+				<dir name="fast_user_switch_screen0">
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="0"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>bonobo-applet</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="true"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked" type="bool" value="true"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid" type="string">
+						<stringvalue>OAFIID:GNOME_FastUserSwitchApplet</stringvalue>
+					</entry>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+				</dir>
+				<dir name="indicator_applet_screen0">
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="4"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>bonobo-applet</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="true"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked" type="bool" value="true"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid" type="string">
+						<stringvalue>OAFIID:GNOME_IndicatorApplet</stringvalue>
+					</entry>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+				</dir>
+			</dir>
+			<dir name="general">
+				<entry name="applet_id_list" type="list" ltype="string">
+					<li type="string">
+						<stringvalue>applet_9</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>notification_area_screen0</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>clock_screen0</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>applet_0</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>applet_1</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>applet_2</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>applet_5</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>applet_6</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>applet_7</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>applet_8</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>applet_11</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>applet_12</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>applet_13</stringvalue>
+					</li>
+				</entry>
+				<entry name="object_id_list" type="list" ltype="string">
+					<li type="string">
+						<stringvalue>object_11</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>object_22</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>object_19</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>browser_launcher_screen0</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>menu_bar_screen0</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>object_0</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>object_1</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>object_5</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>object_6</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>object_8</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>object_12</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>object_9</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>object_13</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>object_14</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>object_10</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>object_16</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>object_4</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>object_17</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>object_18</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>object_21</stringvalue>
+					</li>
+				</entry>
+				<entry name="toplevel_id_list" type="list" ltype="string">
+					<li type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</li>
+					<li type="string">
+						<stringvalue>panel_0</stringvalue>
+					</li>
+				</entry>
+			</dir>
+			<dir name="objects">
+				<dir name="object_21">
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>launcher-object</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location" type="string">
+						<stringvalue>ghb.desktop</stringvalue>
+					</entry>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="624"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+				</dir>
+				<dir name="object_18">
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>launcher-object</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location" type="string">
+						<stringvalue>smplayer.desktop</stringvalue>
+					</entry>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="564"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+				</dir>
+				<dir name="object_17">
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>launcher-object</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location" type="string">
+						<stringvalue>urxvt.desktop</stringvalue>
+					</entry>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="662"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+				</dir>
+				<dir name="object_4">
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>panel_1</stringvalue>
+					</entry>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>launcher-object</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location" type="string">
+						<stringvalue>quodlibet.desktop</stringvalue>
+					</entry>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="-1"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+				</dir>
+				<dir name="object_7">
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>launcher-object</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location" type="string">
+						<stringvalue>/usr/share/applications/liferea.desktop</stringvalue>
+					</entry>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="350"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+				</dir>
+				<dir name="object_16">
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>launcher-object</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location" type="string">
+						<stringvalue>/usr/share/applications/chromium.desktop</stringvalue>
+					</entry>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="302"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+				</dir>
+				<dir name="object_10">
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>launcher-object</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location" type="string">
+						<stringvalue>/usr/share/applications/clementine.desktop</stringvalue>
+					</entry>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="497"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+				</dir>
+				<dir name="object_3">
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>menu-object</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path" type="bool" value="true"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="492"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+				</dir>
+				<dir name="object_11">
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="-1"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>panel_1</stringvalue>
+					</entry>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>launcher-object</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location" type="string">
+						<stringvalue>qBittorrent.desktop</stringvalue>
+					</entry>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+				</dir>
+				<dir name="object_22">
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="-1"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>panel_1</stringvalue>
+					</entry>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>launcher-object</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location" type="string">
+						<stringvalue>shotwell.desktop</stringvalue>
+					</entry>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+				</dir>
+				<dir name="object_19">
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id" type="string">
+						<stringvalue>panel_1</stringvalue>
+					</entry>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="390"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon" type="bool" value="false"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>drawer-object</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+				</dir>
+				<dir name="menu_bar_screen0">
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="0"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>menu-bar</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked" type="bool" value="true"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+				</dir>
+				<dir name="browser_launcher_screen0">
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="245"/>
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>launcher-object</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked" type="bool" value="false"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location" type="string">
+						<stringvalue>firefox.desktop</stringvalue>
+					</entry>
+				</dir>
+				<dir name="object_13">
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="374"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>separator</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+				</dir>
+				<dir name="object_9">
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="420"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>separator</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+				</dir>
+				<dir name="object_8">
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="254"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>launcher-object</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location" type="string">
+						<stringvalue>/usr/share/applications/iceweasel.desktop</stringvalue>
+					</entry>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+				</dir>
+				<dir name="object_1">
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="454"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>launcher-object</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location" type="string">
+						<stringvalue>gnome-terminal.desktop</stringvalue>
+					</entry>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+				</dir>
+				<dir name="object_6">
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="278"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>launcher-object</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location" type="string">
+						<stringvalue>/usr/share/applications/pidgin.desktop</stringvalue>
+					</entry>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+				</dir>
+				<dir name="object_14">
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="225"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>separator</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location"/>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+				</dir>
+				<dir name="object_12">
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="326"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>launcher-object</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location" type="string">
+						<stringvalue>icedove.desktop</stringvalue>
+					</entry>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+				</dir>
+				<dir name="object_5">
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="412"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>launcher-object</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location" type="string">
+						<stringvalue>/usr/share/applications/thunderbird.desktop</stringvalue>
+					</entry>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+				</dir>
+				<dir name="object_0">
+					<entry name="attached_toplevel_id" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="position" schema="/schemas/apps/panel/objects/position" type="int" value="430"/>
+					<entry name="use_menu_path" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="action_type" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="toplevel_id" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>top_panel_screen0</stringvalue>
+					</entry>
+					<entry name="tooltip" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>launcher-object</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false"/>
+					<entry name="locked" schema="/schemas/apps/panel/objects/locked"/>
+					<entry name="custom_icon" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="bonobo_iid" schema="/schemas/apps/panel/objects/bonobo_iid"/>
+					<entry name="launcher_location" schema="/schemas/apps/panel/objects/launcher_location" type="string">
+						<stringvalue>/usr/share/applications/emacs23.desktop</stringvalue>
+					</entry>
+					<entry name="menu_path" schema="/schemas/apps/panel/objects/menu_path"/>
+				</dir>
+			</dir>
+			<dir name="toplevels">
+				<dir name="panel_0">
+					<entry name="animation_speed" schema="/schemas/apps/panel/toplevels/animation_speed"/>
+					<entry name="enable_arrows" schema="/schemas/apps/panel/toplevels/enable_arrows"/>
+					<entry name="unhide_delay" schema="/schemas/apps/panel/toplevels/unhide_delay"/>
+					<entry name="enable_animations" schema="/schemas/apps/panel/toplevels/enable_animations"/>
+					<entry name="auto_hide_size" schema="/schemas/apps/panel/toplevels/auto_hide_size"/>
+					<entry name="monitor" schema="/schemas/apps/panel/toplevels/monitor" type="int" value="0"/>
+					<entry name="enable_buttons" schema="/schemas/apps/panel/toplevels/enable_buttons"/>
+					<entry name="screen" schema="/schemas/apps/panel/toplevels/screen" type="int" value="0"/>
+					<entry name="size" schema="/schemas/apps/panel/toplevels/size"/>
+					<entry name="x_right" schema="/schemas/apps/panel/toplevels/x_right"/>
+					<entry name="y_centered" schema="/schemas/apps/panel/toplevels/y_centered"/>
+					<entry name="y_bottom" schema="/schemas/apps/panel/toplevels/y_bottom"/>
+					<entry name="name" schema="/schemas/apps/panel/toplevels/name"/>
+					<entry name="expand" schema="/schemas/apps/panel/toplevels/expand"/>
+					<entry name="x_centered" schema="/schemas/apps/panel/toplevels/x_centered"/>
+					<entry name="orientation" schema="/schemas/apps/panel/toplevels/orientation" type="string">
+						<stringvalue>bottom</stringvalue>
+					</entry>
+					<entry name="auto_hide" schema="/schemas/apps/panel/toplevels/auto_hide" type="bool" value="false"/>
+					<entry name="y" schema="/schemas/apps/panel/toplevels/y"/>
+					<entry name="x" schema="/schemas/apps/panel/toplevels/x"/>
+					<entry name="hide_delay" schema="/schemas/apps/panel/toplevels/hide_delay"/>
+					<dir name="background">
+						<entry name="color" schema="/schemas/apps/panel/toplevels/background/color"/>
+						<entry name="type" schema="/schemas/apps/panel/toplevels/background/type"/>
+						<entry name="rotate" schema="/schemas/apps/panel/toplevels/background/rotate"/>
+						<entry name="stretch" schema="/schemas/apps/panel/toplevels/background/stretch"/>
+						<entry name="opacity" schema="/schemas/apps/panel/toplevels/background/opacity"/>
+						<entry name="fit" schema="/schemas/apps/panel/toplevels/background/fit"/>
+						<entry name="image" schema="/schemas/apps/panel/toplevels/background/image"/>
+					</dir>
+				</dir>
+				<dir name="panel_1">
+					<entry name="auto_hide" schema="/schemas/apps/panel/toplevels/auto_hide"/>
+					<entry name="y_bottom" schema="/schemas/apps/panel/toplevels/y_bottom"/>
+					<entry name="orientation" schema="/schemas/apps/panel/toplevels/orientation" type="string">
+						<stringvalue>left</stringvalue>
+					</entry>
+					<entry name="y" schema="/schemas/apps/panel/toplevels/y"/>
+					<entry name="x" schema="/schemas/apps/panel/toplevels/x" type="int" value="640"/>
+					<entry name="auto_hide_size" schema="/schemas/apps/panel/toplevels/auto_hide_size"/>
+					<entry name="monitor" schema="/schemas/apps/panel/toplevels/monitor"/>
+					<entry name="animation_speed" schema="/schemas/apps/panel/toplevels/animation_speed"/>
+					<entry name="unhide_delay" schema="/schemas/apps/panel/toplevels/unhide_delay"/>
+					<entry name="screen" schema="/schemas/apps/panel/toplevels/screen"/>
+					<entry name="x_right" schema="/schemas/apps/panel/toplevels/x_right"/>
+					<entry name="x_centered" schema="/schemas/apps/panel/toplevels/x_centered" type="bool" value="false"/>
+					<entry name="hide_delay" schema="/schemas/apps/panel/toplevels/hide_delay"/>
+					<entry name="size" schema="/schemas/apps/panel/toplevels/size"/>
+					<entry name="name" schema="/schemas/apps/panel/toplevels/name"/>
+					<entry name="expand" schema="/schemas/apps/panel/toplevels/expand"/>
+					<entry name="enable_animations" schema="/schemas/apps/panel/toplevels/enable_animations"/>
+					<entry name="y_centered" schema="/schemas/apps/panel/toplevels/y_centered" type="bool" value="true"/>
+					<entry name="enable_buttons" schema="/schemas/apps/panel/toplevels/enable_buttons" type="bool" value="true"/>
+					<entry name="enable_arrows" schema="/schemas/apps/panel/toplevels/enable_arrows" type="bool" value="true"/>
+					<dir name="background">
+						<entry name="stretch" schema="/schemas/apps/panel/toplevels/background/stretch"/>
+						<entry name="fit" schema="/schemas/apps/panel/toplevels/background/fit"/>
+						<entry name="image" schema="/schemas/apps/panel/toplevels/background/image"/>
+						<entry name="color" schema="/schemas/apps/panel/toplevels/background/color"/>
+						<entry name="type" schema="/schemas/apps/panel/toplevels/background/type"/>
+						<entry name="rotate" schema="/schemas/apps/panel/toplevels/background/rotate"/>
+						<entry name="opacity" schema="/schemas/apps/panel/toplevels/background/opacity"/>
+					</dir>
+				</dir>
+				<dir name="top_panel_screen0">
+					<entry name="auto_hide" schema="/schemas/apps/panel/toplevels/auto_hide" type="bool" value="false"/>
+					<entry name="y_bottom" schema="/schemas/apps/panel/toplevels/y_bottom"/>
+					<entry name="orientation" schema="/schemas/apps/panel/toplevels/orientation" type="string">
+						<stringvalue>top</stringvalue>
+					</entry>
+					<entry name="y" schema="/schemas/apps/panel/toplevels/y"/>
+					<entry name="x" schema="/schemas/apps/panel/toplevels/x"/>
+					<entry name="auto_hide_size" schema="/schemas/apps/panel/toplevels/auto_hide_size"/>
+					<entry name="monitor" schema="/schemas/apps/panel/toplevels/monitor"/>
+					<entry name="animation_speed" schema="/schemas/apps/panel/toplevels/animation_speed"/>
+					<entry name="unhide_delay" schema="/schemas/apps/panel/toplevels/unhide_delay"/>
+					<entry name="screen" schema="/schemas/apps/panel/toplevels/screen" type="int" value="0"/>
+					<entry name="x_right" schema="/schemas/apps/panel/toplevels/x_right"/>
+					<entry name="x_centered" schema="/schemas/apps/panel/toplevels/x_centered" type="bool" value="true"/>
+					<entry name="hide_delay" schema="/schemas/apps/panel/toplevels/hide_delay"/>
+					<entry name="size" schema="/schemas/apps/panel/toplevels/size" type="int" value="23"/>
+					<entry name="name" schema="/schemas/apps/panel/toplevels/name"/>
+					<entry name="expand" schema="/schemas/apps/panel/toplevels/expand" type="bool" value="true"/>
+					<entry name="enable_animations" schema="/schemas/apps/panel/toplevels/enable_animations"/>
+					<entry name="y_centered" schema="/schemas/apps/panel/toplevels/y_centered"/>
+					<entry name="enable_buttons" schema="/schemas/apps/panel/toplevels/enable_buttons" type="bool" value="false"/>
+					<entry name="enable_arrows" schema="/schemas/apps/panel/toplevels/enable_arrows" type="bool" value="true"/>
+					<dir name="background">
+						<entry name="stretch" schema="/schemas/apps/panel/toplevels/background/stretch" type="bool" value="true"/>
+						<entry name="fit" schema="/schemas/apps/panel/toplevels/background/fit"/>
+						<entry name="image" schema="/schemas/apps/panel/toplevels/background/image"/>
+						<entry name="color" schema="/schemas/apps/panel/toplevels/background/color"/>
+						<entry name="type" schema="/schemas/apps/panel/toplevels/background/type" type="string">
+							<stringvalue>gtk</stringvalue>
+						</entry>
+						<entry name="rotate" schema="/schemas/apps/panel/toplevels/background/rotate"/>
+						<entry name="opacity" schema="/schemas/apps/panel/toplevels/background/opacity" type="int" value="0"/>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="nm-applet">
+			<entry name="suppress-wireless-networks-available" type="bool" value="false"/>
+			<entry name="disable-disconnected-notifications" type="bool" value="false"/>
+			<entry name="disable-connected-notifications" type="bool" value="false"/>
+			<entry name="stamp" type="int" value="1"/>
+		</dir>
+		<dir name="nautilus">
+			<dir name="desktop">
+				<entry name="text_ellipsis_limit" type="int" value="2"/>
+				<entry name="trash_icon_visible" type="bool" value="false"/>
+				<entry name="home_icon_visible" type="bool" value="false"/>
+				<entry name="computer_icon_visible" type="bool" value="false"/>
+			</dir>
+			<dir name="preferences">
+				<entry name="show_advanced_permissions" type="bool" value="true"/>
+				<entry name="start_with_sidebar" type="bool" value="true"/>
+				<entry name="start_with_location_bar" type="bool" value="true"/>
+				<entry name="desktop_font" type="string">
+					<stringvalue>Sans 10</stringvalue>
+				</entry>
+				<entry name="thumbnail_limit" type="int" value="104857600"/>
+				<entry name="media_automount_open" type="bool" value="true"/>
+				<entry name="media_autorun_never" type="bool" value="false"/>
+				<entry name="show_icon_text" type="string">
+					<stringvalue>local_only</stringvalue>
+				</entry>
+				<entry name="sidebar_width" type="int" value="159"/>
+				<entry name="side_pane_view" type="string">
+					<stringvalue>NautilusPlacesSidebar</stringvalue>
+				</entry>
+				<entry name="enable_delete" type="bool" value="true"/>
+				<entry name="always_use_location_entry" type="bool" value="true"/>
+				<entry name="always_use_browser" type="bool" value="true"/>
+				<entry name="desktop_is_home_dir" type="bool" value="false"/>
+				<entry name="show_image_thumbnails" type="string">
+					<stringvalue>local_only</stringvalue>
+				</entry>
+				<entry name="preview_sound" type="string">
+					<stringvalue>never</stringvalue>
+				</entry>
+				<entry name="confirm_trash" type="bool" value="false"/>
+				<entry name="date_format" type="string">
+					<stringvalue>iso</stringvalue>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>
