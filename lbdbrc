@@ -1,0 +1,5 @@
+METHODS="m_vcf"
+
+VCF_FILES="$HOME/.pim/contacts/vCards.vcf"
+SORT_OUTPUT=name
+KEEP_DUPES=no
