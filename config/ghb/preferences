@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Preferences</key>
+	<dict>
+		<key>AddCC</key>
+		<true />
+		<key>AudioDUB</key>
+		<false />
+		<key>AutoScan</key>
+		<false />
+		<key>EncodeLogLocation</key>
+		<false />
+		<key>LogLongevity</key>
+		<string>immortal</string>
+		<key>LoggingLevel</key>
+		<string>1</string>
+		<key>NotAudioDUB</key>
+		<true />
+		<key>PreferredLanguage</key>
+		<string>und</string>
+		<key>UseM4v</key>
+		<true />
+		<key>VideoQualityGranularity</key>
+		<string>0.25</string>
+		<key>WhenComplete</key>
+		<string>notify</string>
+		<key>allow_tweaks</key>
+		<false />
+		<key>chapters_in_destination</key>
+		<false />
+		<key>check_updates</key>
+		<string>daily</string>
+		<key>constant_rate_factor</key>
+		<true />
+		<key>hbfd</key>
+		<false />
+		<key>hbfd_feature</key>
+		<false />
+		<key>live_duration</key>
+		<integer>35</integer>
+		<key>nocheckvquality</key>
+		<false />
+		<key>preview_count</key>
+		<integer>25</integer>
+		<key>preview_fullscreen</key>
+		<false />
+		<key>reduce_hd_preview</key>
+		<true />
+		<key>show_presets</key>
+		<true />
+		<key>show_preview</key>
+		<true />
+		<key>show_status</key>
+		<true />
+		<key>title_no_in_destination</key>
+		<true />
+		<key>use_dvdnav</key>
+		<false />
+		<key>use_source_name</key>
+		<true />
+		<key>version</key>
+		<string>0.1</string>
+	</dict>
+</dict>
+</plist>
