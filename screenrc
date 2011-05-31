@@ -1,0 +1,3 @@
+# -*- conf -*-
+# Turn off start message:
+startup_message off
