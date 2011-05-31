@@ -1,0 +1,23 @@
+; -*- conf -*-
+[general]
+accounts		= email
+maxsyncaccounts		= 10
+ui			= basic
+fsync			= false
+
+[Account email]
+localrepository		= local
+remoterepository	= remote
+
+[Repository local]
+type			= Maildir
+localfolders		= ~/Maildir
+
+[Repository remote]
+type			= Gmail
+remoteuser		= perhaps-something-non-existent-for-example-only-on-gmail@gmail.com
+remotepass		= 123456
+realdelete		= yes
+nametrans		= lambda name: re.sub('^', '.', re.sub('^(\[Gmail\]/|INBOX)', '', name))
+; folderfilter		= lambda name: name in ['INBOX', '[Gmail]/Important', '[Gmail]/Starred', '[Gmail]/Sent Mail', 'Administrivia', '[Gmail]/Spam']
+maxconnections		= 7
