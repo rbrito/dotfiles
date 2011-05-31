@@ -1,0 +1,5 @@
+set meta-mode		on
+set convert-meta	off
+set output-meta		on
+set page-completions	off
+set echo-control-characters	off
