@@ -1,0 +1,133 @@
+### GKrellM user config.  Auto written, do not edit (usually) ###
+### Version 2.3.5 ###
+enable_hostname 0
+hostname_short 0
+enable_sysname 0
+mbmon_port 0
+sticky_state 0
+dock_type 0
+decorated 0
+skip_taskbar 0
+skip_pager 0
+above 0
+below 0
+track_gtk_theme_name 1
+default_track_theme "Default"
+save_position 0
+chart_width 70
+update_HZ 10
+allow_multiple_instances 0
+float_factor 1000
+hostname sysname_mode 1
+clock_cal clock_launch 
+clock_cal clock_tooltip 
+clock_cal cal_launch 
+clock_cal cal_tooltip 
+clock_cal hour_chime_command 
+clock_cal quarter_chime_command 
+clock_cal loop_chime_enable 0
+clock_cal clock_options 0
+clock_cal cal_options 0
+clock_cal cal_format %F
+clock_cal clock_format %H:%M
+volume_plugin_config RIGHT_CLICK_CMD do not edit (usually) ###
+volume_plugin_config ADDMIXER hw:0
+volume_plugin_config ADDDEV 0
+volume_plugin_config SETDEVNAME Master 
+volume_plugin_config ADDDEV 4
+volume_plugin_config SETDEVNAME PCM 
+cpu extra_info cpu 1
+cpu chart_config cpu 50 20 0 0 0 0 : 0 0 0 0 500 : 0 0 0 0 500 : 0 0 0 0 500
+cpu extra_info cpu0 1
+cpu chart_config cpu0 50 20 0 0 0 0 : 0 0 0 0 500 : 0 0 0 0 500 : 0 0 0 0 500
+cpu extra_info cpu1 1
+cpu chart_config cpu1 50 20 0 0 0 0 : 0 0 0 0 500 : 0 0 0 0 500 : 0 0 0 0 500
+cpu enable 1
+cpu smp_mode 1
+cpu omit_nice_mode 0
+cpu config_tracking 1
+cpu sensor_mode 1
+cpu text_format $T
+proc enable 1 1
+proc launch 
+proc tooltip_comment 
+proc sensor_mode 1
+proc text_format \f$L\r\f$F \w88\b\p\a$p\f procs\n\e$u\f users
+proc chart_config 40 100 0 0 0 0 : 1 0 0 0 500 : 0 0 0 0 500
+disk assign_method 2
+disk device Disk 0 0 0 0 1 0 0
+disk chart_config Disk 40 200000 0 1 0 0 : 0 0 0 0 500 : 0 0 0 0 500
+disk device sda 0 0 11 0 1 -1 0
+disk chart_config sda 40 5000 0 1 0 0 : 0 0 0 0 500 : 0 0 0 0 500
+disk device sda1 0 0 11 0 1 1 0
+disk device sda2 0 0 11 0 1 2 0
+disk device sr0 0 0 14 0 1 -1 0
+disk device fd0 0 0 42 0 1 -1 0
+disk text_format $T
+inet text_format all \t$a\f $l\N$A\f $L
+inet update_interval all 1
+net enables eth0 1 1 0
+net chart_config eth0 40 100000 0 1 0 0 : 0 0 0 0 500 : 0 0 0 0 500
+net enables eth1 1 1 0
+net chart_config eth1 40 150000 0 1 0 0 : 0 0 0 0 500 : 0 0 0 0 500
+net enables eth2 1 1 0
+net enables eth3 1 1 0
+net chart_config eth3 40 2000 0 1 0 0 : 0 0 0 0 500 : 0 0 0 0 500
+net enables lo 0 1 0
+net enables usb0 1 1 0
+net enables wlan0 1 1 0
+net enables wlan1 1 1 0
+net chart_config wlan1 40 30000 0 1 0 0 : 0 0 0 0 500 : 0 0 0 0 500
+net timer_enabled 0
+net timer_seconds 1
+net timer_iface none
+net timer_on 
+net timer_off 
+net text_format $T\b\c\f$L
+net reset_mday 1
+net net_stats_window_height 200
+meminfo mem_meter 1 0 0
+meminfo swap_meter 1 0
+meminfo swap_chart 0 1
+meminfo chart_config 20 20 0 1 0 0 : 0 0 0 0 500 : 0 0 0 0 500
+meminfo mem_launch 
+meminfo mem_tooltip 
+meminfo mem_data_format $t - $U
+meminfo swap_launch 
+meminfo swap_tooltip 
+meminfo swap_data_format $t - $U
+meminfo text_format $T
+fs fs_check_timeout 2
+fs nfs_check_timeout 16
+fs auto_eject 0
+fs binary_units 1
+fs data_format $t - $f free
+mail mailbox-local mbox /var/mail/rbrito
+mail mua 
+mail notify 
+mail fetch_command 
+mail remote_check_timeout 5
+mail local_check_timeout 4
+mail fetch_check_is_local 0
+mail msg_count_mode 0
+mail animation_select_mode 0
+mail fetch_check_only_mode 0
+mail reset_remote_mode 0
+mail unseen_is_new 0
+mail enable 0 0 0 0
+mail animation_continuous 0
+mail show_tooltip 1
+mail mh_seq_ignore 0
+battery enable 0
+battery enable_composite 0
+battery estimate_time 0
+battery estimate_time_discharge 1500
+battery estimate_time_charge 3000
+battery estimate_time_charge_model 0
+battery full_cap_fallback 5000
+battery poll_interval 5
+battery alert_units_percent 0
+uptime enable 0
+uptime launch 
+uptime tooltip 
+gkrellmwireless wlan0 62

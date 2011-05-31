@@ -1,0 +1,13 @@
+sensor sensor_config_version 1
+sensor sensor_sysdep_private 2
+sensor sensor_float_factor 10000
+sensor gkrellm_float_factor 1000
+sensor sysdep_option use_nvclock 0
+sensor "t1" "it8712@290/temp3" 0 0 1 0
+sensor "t2" "thermal_zone0" 10000 0 1 0
+sensor "fan1" "it8712@290/fan1" 0 0 1 0
+sensor "fan2" "it8712@290/fan2" 0 0 1 0
+sensor "Vbat" "it8712@290/in8" 0 0 0 0
+sensor units_fahrenheit 0
+sensor show_units 0
+sensor volt_display_mode 1
