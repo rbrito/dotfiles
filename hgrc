@@ -1,0 +1,7 @@
+[extensions]
+hgext.bookmarks =
+hgext.git =
+
+[git]
+intree = true
+exportbranch=refs/heads/from-hg
