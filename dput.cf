@@ -1,0 +1,55 @@
+[DEFAULT]
+login			= username
+method			= ftp
+hash			= md5
+allow_unsigned_uploads	= 0
+allow_dcut		= 0
+run_lintian		= 0
+run_dinstall		= 0
+check_version		= 0
+scp_compress		= 0
+post_upload_command	=
+pre_upload_command	=
+passive_ftp		= 1
+default_host_main	=
+allowed_distributions	= (?!UNRELEASED)
+
+[mentors]
+fqdn			= mentors.debian.net
+method			= ftp
+login			= anonymous
+incoming		= .
+allow_unsigned_uploads	= 0
+run_dinstall		= 0
+progress_indicator	= 2
+passive_ftp		= 1
+
+[ftp-master]
+fqdn			= ftp.upload.debian.org
+method			= ftp
+login			= anonymous
+incoming		= /pub/UploadQueue/
+allow_unsigned_uploads	= 0
+allow_dcut		= 1
+progress_indicator	= 2
+passive_ftp		= 1
+
+[volatile]
+fqdn			= volatile-master.debian.org
+method			= ftp
+login			= anonymous
+incoming		= /pub/UploadQueue/
+
+[my-ppa]
+fqdn			= ppa.launchpad.net
+method			= ftp
+incoming		= ~rbrito/ppa/ubuntu/maverick
+login			= anonymous
+allow_unsigned_uploads	= 0
+
+[ppa-youtube-dl]
+fqdn			= ppa.launchpad.net
+method			= ftp
+incoming		= ~rbrito/youtube-dl/ubuntu/
+login			= anonymous
+allow_unsigned_uploads	= 0
