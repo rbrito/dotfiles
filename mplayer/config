@@ -1,6 +1,7 @@
 [default]
 vo=xv
 ao=alsa
+mixer-channel=Master
 joystick=no
 lirc=no
 
