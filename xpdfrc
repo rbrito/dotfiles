@@ -15,6 +15,6 @@ cMapDir		Adobe-Japan2	/usr/share/poppler/cMap/Adobe-Japan2/
 #cMapDir		Identity-H	/usr/share/poppler/cMap/
 #cMapDir		Identity-V	/usr/share/poppler/cMap/
 
-#toUnicodeDir	/usr/share/poppler/cidToUnicode
-#toUnicodeDir	/usr/share/poppler/nameToUnicode
-#toUnicodeDir	/usr/share/poppler/unicodeMap
+#toUnicodeDir			/usr/share/poppler/cidToUnicode
+#toUnicodeDir			/usr/share/poppler/nameToUnicode
+#toUnicodeDir			/usr/share/poppler/unicodeMap
