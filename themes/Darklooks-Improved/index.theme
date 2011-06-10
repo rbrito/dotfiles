@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Darklooks-Improved
+Type=X-GNOME-Metatheme
+Comment=Darklooks, with tweaked colors for text fields, with MurrineRounded as Metacity theme, Faenza icons, and dark cursors. Works well with background color set to #2C001E.
+
+[X-GNOME-Metatheme]
+GtkTheme=Darklooks
+MetacityTheme=MurrineRounded
+IconTheme=Faenza-Darkest
+GtkColorScheme=fg_color:#e6e6e6e6e6e6,bg_color:#555557575353,text_color:#2e2e34343636,base_color:#d3d3d7d7cfcf,selected_fg_color:#7a7aa3a3cccc,selected_bg_color:#3f3f40403d3d,tooltip_fg_color:#000000000000,tooltip_bg_color:#ededdede5c5c
+CursorTheme=DMZ-Black
+CursorSize=24
+NotificationTheme=slider
