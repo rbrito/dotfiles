@@ -38,6 +38,7 @@ fluxbox/slitlist
 fluxbox/windowmenu
 gkrellm2/data/
 gnupg/random_seed
+gstreamer-*/*
 gtkpod/backupDB*
 gtkpod/local*
 gtkpod/podcasts*
