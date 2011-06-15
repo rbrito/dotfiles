@@ -42,6 +42,7 @@ gstreamer-*/*
 gtkpod/backupDB*
 gtkpod/local*
 gtkpod/podcasts*
+gtkpod/session/*
 mutt/certificates
 pim/*.cache
 pim/contacts/*.cache
