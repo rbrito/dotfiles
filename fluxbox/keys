@@ -38,8 +38,8 @@ Control F4 :ExecCommand emacs &
 Control F5 :ExecCommand icedove &
 Control F6 :ExecCommand x-terminal-emulator &
 
-Mod1 Tab :NextWindow
-Mod1 Shift Tab :PrevWindow
+Mod1 Tab :NextWindow (workspace=[current])
+Mod1 Shift Tab :PrevWindow (workspace=[current])
 
 Mod1 H :Minimize
 Mod1 Mod4 H :MaximizeWindow
