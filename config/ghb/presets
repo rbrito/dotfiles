@@ -1556,7 +1556,7 @@
 				<key>AudioSamplerate</key>
 				<string>Same as source</string>
 				<key>AudioTrack</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>AudioTrackDRCSlider</key>
 				<real>0</real>
 				<key>AudioTrackDescription</key>
@@ -1662,6 +1662,128 @@
 		<integer>0</integer>
 		<key>x264Option</key>
 		<string></string>
+	</dict>
+	<dict>
+		<key>AudioList</key>
+		<array>
+			<dict>
+				<key>AudioBitrate</key>
+				<string>448</string>
+				<key>AudioEncoder</key>
+				<string>AC3 Passthru</string>
+				<key>AudioEncoderActual</key>
+				<string>ac3pass</string>
+				<key>AudioMixdown</key>
+				<string>None</string>
+				<key>AudioSamplerate</key>
+				<string>Same as source</string>
+				<key>AudioTrack</key>
+				<integer>0</integer>
+				<key>AudioTrackDRCSlider</key>
+				<real>0</real>
+				<key>AudioTrackDescription</key>
+				<string>No Audio</string>
+			</dict>
+		</array>
+		<key>ChapterMarkers</key>
+		<false />
+		<key>Default</key>
+		<false />
+		<key>FileFormat</key>
+		<string>MP4 file</string>
+		<key>Folder</key>
+		<false />
+		<key>Mp4HttpOptimize</key>
+		<true />
+		<key>Mp4LargeFile</key>
+		<true />
+		<key>Mp4iPodCompatible</key>
+		<false />
+		<key>PictureAutoCrop</key>
+		<true />
+		<key>PictureBottomCrop</key>
+		<integer>0</integer>
+		<key>PictureDeblock</key>
+		<integer>4</integer>
+		<key>PictureDecomb</key>
+		<integer>2</integer>
+		<key>PictureDecombCustom</key>
+		<string></string>
+		<key>PictureDecombDeinterlace</key>
+		<true />
+		<key>PictureDeinterlace</key>
+		<integer>0</integer>
+		<key>PictureDeinterlaceCustom</key>
+		<string></string>
+		<key>PictureDenoise</key>
+		<integer>3</integer>
+		<key>PictureDenoiseCustom</key>
+		<string></string>
+		<key>PictureDetelecine</key>
+		<integer>2</integer>
+		<key>PictureDetelecineCustom</key>
+		<string></string>
+		<key>PictureKeepRatio</key>
+		<true />
+		<key>PictureLeftCrop</key>
+		<integer>0</integer>
+		<key>PictureLooseCrop</key>
+		<true />
+		<key>PictureModulus</key>
+		<string>2</string>
+		<key>PicturePAR</key>
+		<string>1</string>
+		<key>PicturePARHeight</key>
+		<integer>1</integer>
+		<key>PicturePARWidth</key>
+		<integer>1</integer>
+		<key>PictureRightCrop</key>
+		<integer>0</integer>
+		<key>PictureTopCrop</key>
+		<integer>0</integer>
+		<key>PresetBuildNumber</key>
+		<integer>2011060299</integer>
+		<key>PresetDescription</key>
+		<string>A version of the High-Profile to use for my storage, moderately future-proof needs.</string>
+		<key>PresetName</key>
+		<string>Storage</string>
+		<key>SubtitleList</key>
+		<array>
+		</array>
+		<key>Type</key>
+		<integer>1</integer>
+		<key>UsesPictureFilters</key>
+		<integer>1</integer>
+		<key>UsesPictureSettings</key>
+		<integer>2</integer>
+		<key>VideoAvgBitrate</key>
+		<integer>1800</integer>
+		<key>VideoEncoder</key>
+		<string>H.264 (x264)</string>
+		<key>VideoFramerate</key>
+		<string>Same as source</string>
+		<key>VideoFrameratePFR</key>
+		<true />
+		<key>VideoGrayScale</key>
+		<false />
+		<key>VideoQualitySlider</key>
+		<real>16</real>
+		<key>VideoQualityType</key>
+		<integer>2</integer>
+		<key>VideoTargetSize</key>
+		<integer>700</integer>
+		<key>VideoTurboTwoPass</key>
+		<true />
+		<key>VideoTwoPass</key>
+		<true />
+		<key>anamorphic</key>
+		<true />
+		<key>par_height</key>
+		<integer>0</integer>
+		<key>par_width</key>
+		<integer>0</integer>
+		<key>x264Option</key>
+		<string>b-adapt=2:rc-lookahead=50:direct=auto:partitions=all:nr=1000</string>
 	</dict>
 </array>
 </plist>
