@@ -67,6 +67,9 @@
 (add-hook 'c-mode-hook		'c-n-cpp-environment)
 (add-hook 'c++-mode-hook	'c-n-cpp-environment)
 
+(add-hook 'dired-load-hook	(lambda () (load "dired-x")))
+(add-hook 'dired-mode-hook	(lambda ()))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; General settings
 (setq inhibit-startup-message t); remove splash screen
