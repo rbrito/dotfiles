@@ -7,6 +7,7 @@ config/Clementine/networkcache/
 config/DjVuLibre
 config/SubDownloader/
 config/Trolltech.conf
+config/anjuta
 config/banshee*
 config/bleachbit/
 config/chromium/
@@ -23,6 +24,7 @@ config/menus/
 config/monitors.xml
 config/qBittorrent/*resume.conf
 config/smplayer/
+config/totem
 config/transmission/dht.dat
 config/user-dirs.*
 elinks/bookmarks
