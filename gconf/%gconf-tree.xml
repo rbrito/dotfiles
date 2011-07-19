@@ -22,6 +22,198 @@
 	</dir>
 	<dir name="desktop">
 		<dir name="gnome">
+			<dir name="thumbnailers">
+				<dir name="video@x-totem-stream">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@x-theora@ogg">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@x-ogm@ogg">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@x-nsv">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@x-msvideo">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@x-ms-wvx">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@x-ms-wmx">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@x-ms-wmv">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@x-ms-wm">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@x-ms-asx">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@x-ms-asf">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@x-mpeg">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@x-matroska">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@x-m4v">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@x-flv">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@x-flic">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@x-fli">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@x-flc">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@x-avi">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@x-anim">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@webm">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@vnd.vivo">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@vnd.rn-realvideo">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@vnd.divx">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@vivo">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@quicktime">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@ogg">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@msvideo">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@mpeg">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@mp4v-es">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@mp4">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@mp2t">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@flv">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@fli">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@dv">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="video@3gpp">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="text@x-google-video-pointer">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+				<dir name="application@x-flash-video">
+					<entry name="command" type="string">
+						<stringvalue>/usr/bin/ffmpegthumbnailer -s %s -i %i -o %o -c png -f</stringvalue>
+					</entry>
+				</dir>
+			</dir>
 			<dir name="typing_break">
 				<entry name="allow_postpone" type="bool" value="true"/>
 				<entry name="enabled" type="bool" value="false"/>
