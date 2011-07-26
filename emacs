@@ -100,6 +100,11 @@
  '(LaTeX-item-indent 0)
  '(TeX-source-correlate-method (quote source-specials))
  '(TeX-source-correlate-start-server t)
+ '(TeX-view-program-selection
+   (quote (((output-dvi style-pstricks) "dvips and gv")
+	   (output-dvi "xdvi")
+	   (output-pdf "xdg-open")
+	   (output-html "xdg-open"))))
  '(case-fold-search t)
  '(dired-recursive-delete t)
  '(ecb-layout-window-sizes nil)
