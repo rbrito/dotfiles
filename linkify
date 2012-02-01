@@ -72,15 +72,32 @@ def add_hook():
     f.close()
     os.chmod('.git/hooks/post-commit', 0755)
 
-if __name__ == '__main__':
+
+def parse_cli():
     import optparse
     parser = optparse.OptionParser()
 
-    parser.add_option('-H', '--install-hook', help='Install git hook for automatic push.', action='store_true', default=False)
-    parser.add_option('-n', '--no-linkify', help='Disable creation of symlinks', action='store_true', default=False)
-    parser.add_option('-P', '--no-fix-perms', help='Disable fix of permission for private files.', action='store_true', default=False)
+    parser.add_option('-H',
+                      '--install-hook',
+                      help='Install git hook for automatic push.',
+                      action='store_true',
+                      default=False)
+    parser.add_option('-n',
+                      '--no-linkify',
+                      help='Disable creation of symlinks',
+                      action='store_true',
+                      default=False)
+    parser.add_option('-P',
+                      '--no-fix-perms',
+                      help='Disable fix of permission for private files.',
+                      action='store_true',
+                      default=False)
 
-    opts, args = parser.parse_args()
+    return parser.parse_args()
+
+
+if __name__ == '__main__':
+    opts, args = parse_cli()
 
     if not opts.no_linkify:
         linkify(args)
