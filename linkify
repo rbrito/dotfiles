@@ -28,6 +28,20 @@ to_ignore = [
 ]
 
 
+
+def make_private(files = []):
+    if len(files) == 0:
+        files = os.listdir('.')
+    else:
+        # Use the list of files passed by the user, if it is not empty
+        pass
+    for filename in files:
+        if os.path.isdir(filename):
+            os.chmod(filename, 0700)
+        else:
+            os.chmod(filename, 0600)
+
+
 def linkify(files = []):
     if len(files) == 0:
         files = os.listdir('.')
@@ -37,8 +51,6 @@ def linkify(files = []):
 
     os.chdir(os.path.join(os.environ['HOME'], '.dotfiles'))
     for source in files:
-        if source in to_keep_private:
-            make_private(source)
         if source not in to_ignore:
             target = os.path.join('..', '.' + source)
             source = os.path.join('.dotfiles', source)
@@ -53,12 +65,6 @@ def linkify(files = []):
                     print errno.errorcode[e.errno]
             finally:
                 os.symlink(source, target)
-
-def make_private(filename):
-    if os.path.isdir(filename):
-        os.chmod(filename, 0700)
-    else:
-        os.chmod(filename, 0600)
 
 def add_hook():
     f = open('.git/hooks/post-commit', 'w')
