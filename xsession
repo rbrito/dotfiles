@@ -9,6 +9,8 @@ export LC_CTYPE=pt_BR.utf-8
 [ -f $HOME/.Xdefaults ] && xrdb -merge -nocpp $HOME/.Xdefaults
 
 xset dpms 360 720 1800 &
+xsessiond &
+
 gkrellm -w &
 urxvtd &
 xconsole -file /dev/xconsole &
