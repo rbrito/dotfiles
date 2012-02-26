@@ -136,3 +136,6 @@ XConsoleFrame.defaultDistance:		1
 
 !!! Xft
 Xft.antialias:			true
+Xft.hinting:			1
+Xft.rgba:			none
+Xft.hintstyle:			hintfull
