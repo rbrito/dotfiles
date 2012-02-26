@@ -1,0 +1,39 @@
+# -*- conf -*-
+Gtk/AutoMnemonics 1
+Gtk/ButtonImages 0
+Gtk/CanChangeAccels 0
+Gtk/ColorPalette "black:white:gray50:red:purple:blue:light blue:green:yellow:orange:lavender:brown:goldenrod4:dodger blue:pink:light green:gray10:gray30:gray75:gray90"
+Gtk/ColorScheme ""
+Gtk/CursorBlinkTimeout 10
+Gtk/CursorThemeName "DMZ-Black"
+Gtk/CursorThemeSize 18
+Gtk/EnableAnimations 1
+Gtk/FontName "Sans 10"
+Gtk/IMModule ""
+Gtk/IMPreeditStyle "callback"
+Gtk/IMStatusStyle "callback"
+Gtk/KeyThemeName "Emacs"
+Gtk/MenuBarAccel "F10"
+Gtk/MenuImages 0
+Gtk/Modules ""
+Gtk/ShowInputMethodMenu 1
+Gtk/ShowUnicodeMenu 1
+Gtk/TimeoutInitial 200
+Gtk/TimeoutRepeat 20
+Gtk/ToolbarIconSize "large"
+Gtk/ToolbarStyle "both-horiz"
+Net/CursorBlink 1
+Net/CursorBlinkTime 1200
+Net/DndDragThreshold 8
+Net/DoubleClickTime 400
+Net/EnableEventSounds 0
+Net/EnableInputFeedbackSounds 0
+Net/FallbackIconTheme "gnome"
+Net/IconThemeName "Faenza-Dark"
+Net/SoundThemeName "freedesktop"
+Net/ThemeName "Zukitwo-Dark"
+Xft/Antialias 1
+Xft/HintStyle "hintfull"
+Xft/Hinting 1
+Xft/RGBA "rgb"
+Xft/DPI 98304
