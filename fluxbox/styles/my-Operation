@@ -1,11 +1,9 @@
-toolbar:                        flat crossdiagonal gradient
-toolbar.color:                  rgb:6/9/c
-toolbar.colorTo:                rgb:4/6/8
+toolbar:                        flat
+toolbar.color:                  #202020
 toolbar.button:                 parentrelative
 toolbar.button.picColor:        grey85
-toolbar.button.pressed:         flat crossdiagonal gradient
-toolbar.button.pressed.color:   grey50
-toolbar.button.pressed.colorTo: grey80
+toolbar.button.pressed:         flat
+toolbar.button.pressed.color:   grey75
 toolbar.label:                  parentrelative
 toolbar.label.textColor:        grey85
 toolbar.windowLabel:            parentrelative
@@ -13,18 +11,16 @@ toolbar.windowLabel.textColor:  grey85
 toolbar.clock:                  parentrelative
 toolbar.clock.textColor:        grey85
 toolbar.justify:                right
-toolbar.font:                   sans:size=11
+toolbar.font:                   sans:size=13
 
-menu.title:                     flat crossdiagonal gradient
-menu.title.color:               rgb:6/9/c
-menu.title.colorTo:             rgb:3/48/6
+menu.title:                     flat
+menu.title.color:               #202020
 menu.title.textColor:           white
 menu.title.font:                sans:size=11
 menu.title.justify:             right
 
-menu.frame:                     flat crossdiagonal gradient
-menu.frame.color:               grey50
-menu.frame.colorTo:             grey80
+menu.frame:                     flat
+menu.frame.color:               grey75
 menu.frame.textColor:           grey20
 menu.frame.disableColor:        grey40
 menu.frame.font:                sans:size=11
@@ -33,43 +29,37 @@ menu.frame.justify:             center
 menu.bullet.position:           right
 menu.bullet:                    triangle
 
-menu.hilite:                    flat crossdiagonal gradient
-menu.hilite.color:              rgb:6/9/c
-menu.hilite.colorTo:            rgb:3/48/6
+menu.hilite:                    flat
+menu.hilite.color:              #202020
 menu.hilite.textColor:          white
 
-window.title.focus:             flat crossdiagonal gradient
-window.title.focus.color:       rgb:6/9/c
-window.title.focus.colorTo:     rgb:3/48/6
-window.title.unfocus:           flat diagonal gradient
-window.title.unfocus.color:     grey50
-window.title.unfocus.colorTo:   grey20
+window.title.focus:             flat
+window.title.focus.color:       #202020
+window.title.unfocus:           flat
+window.title.unfocus.color:     grey75
 
 window.label.focus:             parentrelative
 window.label.focus.textColor:   white
 window.label.unfocus:           parentrelative
-window.label.unfocus.textColor: grey60
+window.label.unfocus.textColor: grey75
 
 window.button.focus:            parentrelative
 window.button.focus.picColor:   grey85
 window.button.unfocus:          parentrelative
-window.button.unfocus.picColor: grey60
-window.button.pressed:          flat crossdiagonal gradient
-window.button.pressed.color:    grey50
-window.button.pressed.colorTo:  grey80
+window.button.unfocus.picColor: grey75
+window.button.pressed:          flat
+window.button.pressed.color:    grey75
 
-window.handle.focus:            flat crossdiagonal gradient
-window.handle.focus.color:      rgb:6/9/c
-window.handle.focus.colorTo:    rgb:3/48/6
-window.handle.unfocus:          flat diagonal gradient
-window.handle.unfocus.color:    grey50
-window.handle.unfocus.colorTo:  grey20
+window.handle.focus:            flat
+window.handle.focus.color:      #202020
+window.handle.unfocus:          flat
+window.handle.unfocus.color:    grey75
 
 window.grip.focus:              parentrelative
 window.grip.unfocus:            parentrelative
 
-window.frame.focusColor:        rgb:6/9/c
-window.frame.unfocusColor:      grey50
+window.frame.focusColor:        #202020
+window.frame.unfocusColor:      grey75
 
 window.font:                    sans:size=11
 window.justify:                 right
@@ -83,11 +73,8 @@ handleWidth:                    4
 *textColor:                     grey85
 *Font:                          sans:size=10
 
-background: flatcrossdiagonalgradient 
-background.color: rgb:4/6/8 
-background.colorTo: rgb:3/48/6
+background: flat
+background.color: #2c001e
 
-bbpager.desktop.focus:          flat interlaced crossdiagonal gradient
-bbpager.desktop.focus.color:    rgb:6/9/c
-bbpager.desktop.focus.colorTo:  rgb:3/48/6
-
+bbpager.desktop.focus:          flat
+bbpager.desktop.focus.color:    #202020
