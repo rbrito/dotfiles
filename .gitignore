@@ -23,7 +23,7 @@ config/gummi/
 config/menus/
 config/monitors.xml
 config/qBittorrent/*resume.conf
-config/smplayer/
+config/smplayer/*.m3u8
 config/totem
 config/transmission/dht.dat
 config/user-dirs.*
