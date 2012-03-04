@@ -51,10 +51,10 @@ def linkify(files=None):
         pass
 
     os.chdir(os.path.join(os.environ['HOME'], '.dotfiles'))
-    for source in files:
+    for filename in files:
         if source not in to_ignore:
-            target = os.path.join('..', '.' + source)
-            source = os.path.join('.dotfiles', source)
+            target = os.path.join('..', '.' + filename)
+            source = os.path.join('.dotfiles', filename)
             try:
                 os.unlink(target)
             except OSError, e:
