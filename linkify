@@ -3,6 +3,7 @@
 from __future__ import with_statement
 
 import errno
+import optparse
 import os
 
 TO_IGNORE = [
@@ -46,7 +47,6 @@ def add_hook():
 
 
 def parse_cli():
-    import optparse
     parser = optparse.OptionParser()
 
     parser.add_option('-H',
