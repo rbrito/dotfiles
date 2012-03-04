@@ -13,12 +13,7 @@ TO_IGNORE = [
 ]
 
 
-def make_private(files=None):
-    if files is None:
-        files = os.listdir('.')
-    else:
-        # Use the list of files passed by the user, if it is not empty
-        pass
+def make_private(files):
     for filename in files:
         if os.path.isdir(filename):
             os.chmod(filename, 0700)
@@ -26,14 +21,7 @@ def make_private(files=None):
             os.chmod(filename, 0600)
 
 
-def linkify(files=None):
-    if files is None:
-        files = os.listdir('.')
-    else:
-        # Use the list of files passed by the user, if it is not empty
-        pass
-
-    os.chdir(os.path.join(os.environ['HOME'], '.dotfiles'))
+def linkify(files):
     for filename in files:
         if filename not in TO_IGNORE:
             target = os.path.join('..', '.' + filename)
@@ -81,11 +69,17 @@ def parse_cli():
 
 
 if __name__ == '__main__':
-    opts, args = parse_cli()
+    opts, files = parse_cli()
+
+    # Change to the directory where the dotfiles are
+    os.chdir(os.path.join(os.environ['HOME'], '.dotfiles'))
+
+    if not files:
+        files = os.listdir('.')
 
     if not opts.no_linkify:
-        linkify(args)
+        linkify(files)
     if not opts.no_fix_perms:
-        make_private(args)
+        make_private(files)
     if opts.install_hook:
         add_hook()
