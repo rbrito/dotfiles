@@ -52,7 +52,7 @@ def linkify(files=None):
 
     os.chdir(os.path.join(os.environ['HOME'], '.dotfiles'))
     for filename in files:
-        if source not in to_ignore:
+        if filename not in to_ignore:
             target = os.path.join('..', '.' + filename)
             source = os.path.join('.dotfiles', filename)
             try:
