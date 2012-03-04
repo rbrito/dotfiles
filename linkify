@@ -28,8 +28,8 @@ to_ignore = [
 ]
 
 
-def make_private(files=[]):
-    if len(files) == 0:
+def make_private(files=None):
+    if files is None:
         files = os.listdir('.')
     else:
         # Use the list of files passed by the user, if it is not empty
@@ -41,8 +41,8 @@ def make_private(files=[]):
             os.chmod(filename, 0600)
 
 
-def linkify(files=[]):
-    if len(files) == 0:
+def linkify(files=None):
+    if files is None:
         files = os.listdir('.')
     else:
         # Use the list of files passed by the user, if it is not empty
