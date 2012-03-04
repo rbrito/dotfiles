@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+from __future__ import with_statement
+
 import errno
 import os
 
@@ -67,9 +69,8 @@ def linkify(files=None):
 
 
 def add_hook():
-    f = open('.git/hooks/post-commit', 'w')
-    f.write('#!/bin/sh\ngit push\n')
-    f.close()
+    with open('.git/hooks/post-commit', 'w') as hook:
+        hook.write('#!/bin/sh\ngit push\n')
     os.chmod('.git/hooks/post-commit', 0755)
 
 
