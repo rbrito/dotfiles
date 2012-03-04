@@ -5,7 +5,7 @@ from __future__ import with_statement
 import errno
 import os
 
-to_keep_private = [
+TO_KEEP_PRIVATE = [
     'cifs-credentials',
     'config',
     'fetchmailrc',
@@ -22,7 +22,7 @@ to_keep_private = [
     'ssh',
     ]
 
-to_ignore = [
+TO_IGNORE = [
     '.',
     '.git',
     '.gitignore',
@@ -52,7 +52,7 @@ def linkify(files=None):
 
     os.chdir(os.path.join(os.environ['HOME'], '.dotfiles'))
     for filename in files:
-        if filename not in to_ignore:
+        if filename not in TO_IGNORE:
             target = os.path.join('..', '.' + filename)
             source = os.path.join('.dotfiles', filename)
             try:
